@@ -1,0 +1,3861 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jejak Akulturasi Masyarakat Tionghoa</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <a href="#berand" class="nav-brand"> JEJAK AKULTURASI </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tujuan">Tujuan</a></li>
+        <li><a href="#jalur">Jalur Sutra & Rempah</a></li>
+        <li><a href="#akulturasi">Akulturasi Budaya</a></li>
+        <li><a href="#kesimpulan">Kesimpulan</a></li>
+        <li><a href="#kuis">Kuis</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda">
+      <div class="hero-inner">
+        <p class="hero-keterangan">Materi Pembelajaran Sejarah Lokal</p>
+        <h1 class="hero-judul">
+          SEJARAH TERBENTUKNYA MASYARAKAT TIONGHOA: <br />
+          JEJAK KEARIFAN LOKAL DAN MULTIKULTURAL DI
+          <em>LASEM, SEMARANG,</em> DAN <em>TANGERANG</em>
+        </h1>
+        <p class="hero-sub">
+          Pengintegrasian Sejarah Lokal dalam Materi Jaringan Perdagangan
+          Internasional di Nusantara
+        </p>
+        <div class="hero-nama">
+          <div class="avatar">P</div>
+
+          <div>
+            <div style="font-weight: 600">Peneliti / Nur Aeni Marta</div>
+
+            <div style="opacity: 0.7; font-size: 0.78rem">
+              Universitas Negeri Jakarta · 2026
+            </div>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <a href="#tujuan" class="btn-merah"> Mulai Belajar </a>
+          <a href="#akulturasi" class="btn-outline"> Eksplorasi Peta </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tujuan -->
+    <section id="tujuan">
+      <div class="kontainer">
+        <div class="section-header fade-in">
+          <span class="label-atas">✦ Tujuan Pembelajaran ✦</span>
+          <h2 class="section-judul">Apa yang Akan Kamu Pelajari?</h2>
+          <p class="section-sub">
+            Setelah mempelajari materi ini, peserta didik diharapkan mampu
+            mencapai kompetensi berikut.
+          </p>
+        </div>
+
+        <div class="tujuan-grid">
+          <div class="tujuan-card fade-in">
+            <div class="tujuan-ikon">📖</div>
+            <p>Menjelaskan konsep <strong>akulturasi budaya</strong>.</p>
+          </div>
+          <div class="tujuan-card fade-in">
+            <div class="tujuan-ikon">⛵</div>
+            <p>
+              Menganalisis latar belakang kedatangan masyarakat Tionghoa ke
+              Nusantara, khususnya di wilayah
+              <strong>Semarang, Lasem, dan Tangerang</strong>.
+            </p>
+          </div>
+          <div class="tujuan-card fade-in">
+            <div class="tujuan-ikon">🏛️</div>
+            <p>
+              Mengidentifikasi bentuk-bentuk akulturasi budaya Tionghoa dan
+              budaya lokal pada bidang
+              <strong>arsitektur, kuliner, kesenian, bahasa, dan tradisi</strong
+              >.
+            </p>
+          </div>
+          <div class="tujuan-card fade-in">
+            <div class="tujuan-ikon">⚖️</div>
+            <p>
+              Membandingkan karakteristik akulturasi budaya di
+              <strong>Semarang, Lasem, dan Tangerang</strong>
+              serta faktor-faktor penyebab perbedaannya.
+            </p>
+          </div>
+          <div class="tujuan-card fade-in">
+            <div class="tujuan-ikon">🔍</div>
+            <p>
+              Menganalisis dampak akulturasi budaya terhadap kehidupan
+              masyarakat dalam aspek
+              <strong>sosial, ekonomi, budaya, dan identitas lokal</strong>.
+            </p>
+          </div>
+          <div class="tujuan-card fade-in">
+            <div class="tujuan-ikon">🤝</div>
+            <p>
+              Mengevaluasi nilai-nilai
+              <strong>toleransi, keberagaman, dan integrasi sosial</strong>
+              yang tercermin dalam proses akulturasi budaya Tionghoa dan budaya
+              lokal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION: JALUR PERDAGANGAN ===================== -->
+    <section id="jalur">
+      <div class="kontainer">
+        <div class="section-header fade-in">
+          <span class="label-atas">✦ Jalur Perdagangan ✦</span>
+          <h2 class="section-judul">Jalur Sutra &amp; Jalur Rempah</h2>
+          <p class="section-sub">
+            Dua jalur perdagangan besar yang menghubungkan Nusantara dengan
+            dunia — bukan sekadar jalur barang, tetapi juga jalur pertukaran
+            manusia, gagasan, agama, teknologi, bahasa, dan budaya.
+          </p>
+        </div>
+
+        <!-- ── BOX PEMANTIK ── -->
+        <div class="pemantik-box fade-in">
+          <div class="pemantik-icon">🌏</div>
+          <div class="pemantik-isi">
+            <p class="pemantik-label">Pernahkah Kamu Bertanya?</p>
+            <p>
+              Bagaimana budaya Tionghoa bisa sampai ke Nusantara? Mengapa di
+              Indonesia terdapat klenteng, makanan peranakan, batik bermotif
+              naga, hingga kawasan Pecinan?
+            </p>
+            <p>
+              Jawabannya tidak terlepas dari dua jaringan perdagangan besar
+              dunia yang telah menghubungkan berbagai bangsa selama
+              berabad-abad, yaitu <strong>Jalur Sutra</strong> dan
+              <strong>Jalur Rempah</strong>.
+            </p>
+            <p>
+              Kedua jalur ini bukan hanya menjadi jalur perdagangan barang,
+              tetapi juga menjadi jalur pertukaran manusia, gagasan, agama,
+              teknologi, bahasa, dan budaya. Melalui jalur inilah masyarakat
+              Tionghoa mulai berinteraksi dengan masyarakat Nusantara dan
+              kemudian melahirkan proses <strong>akulturasi budaya</strong> yang
+              masih dapat kita lihat hingga sekarang.
+            </p>
+          </div>
+        </div>
+
+        <!-- ── TABS ── -->
+        <div class="jalur-tabs">
+          <button class="jalur-tab aktif" onclick="gantiJalur('sutra', this)">
+            <span class="tab-ikon">🧵</span> Jalur Sutra
+          </button>
+          <button class="jalur-tab" onclick="gantiJalur('rempah', this)">
+            <span class="tab-ikon">🌶️</span> Jalur Rempah
+          </button>
+        </div>
+
+        <!-- ══════════════════════════════════════════ -->
+        <!-- KONTEN: JALUR SUTRA                        -->
+        <!-- ══════════════════════════════════════════ -->
+        <div class="jalur-konten aktif" id="konten-sutra">
+          <!-- Foto peta -->
+          <div class="jalur-peta-wrap">
+            <img
+              src="assets/peta-jalur-sutra.png"
+              alt="Peta Jalur Sutra"
+              class="jalur-foto"
+            />
+            <div class="foto-keterangan">
+              Jaringan Jalur Sutra — menghubungkan Tiongkok hingga Eropa
+            </div>
+          </div>
+
+          <!-- Info utama -->
+          <div class="jalur-info">
+            <h3>Apa Itu Jalur Sutra?</h3>
+            <p>
+              Jalur Sutra (<em>Silk Road</em>) adalah jaringan perdagangan
+              internasional yang menghubungkan Tiongkok dengan Asia Tengah,
+              Timur Tengah, Afrika, dan Eropa sejak sekitar
+              <strong>abad ke-2 SM</strong>. Nama "Jalur Sutra" berasal dari
+              komoditas utama yang diperdagangkan oleh bangsa Tiongkok, yaitu
+              kain sutra yang sangat diminati oleh masyarakat dunia pada masa
+              itu.
+            </p>
+            <p>
+              Awalnya jalur ini dilalui lewat jalur darat. Namun ketika muatan
+              jauh lebih besar dan emas ditambahkan menjadi komoditas dagang,
+              keamanan semakin rawan dan biaya pajak semakin tinggi — sehingga
+              para pedagang beralih ke jalur laut yang lebih efisien.
+            </p>
+
+            <!-- Accordion: Rute -->
+            <div class="accordion-grup">
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span>💡 Mengapa Jalur Sutra Penting?</span>
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>
+                    Jalur Sutra memungkinkan terjadinya pertukaran lintas batas
+                    yang belum pernah terjadi sebelumnya dalam skala yang luas —
+                    mempertemukan berbagai peradaban besar dunia untuk pertama
+                    kalinya.
+                  </p>
+                  <div class="grid-2-kecil">
+                    <div class="mini-card">📦 Barang dagangan</div>
+                    <div class="mini-card">⚙️ Teknologi</div>
+                    <div class="mini-card">🕌 Agama</div>
+                    <div class="mini-card">📚 Pengetahuan</div>
+                    <div class="mini-card">🎨 Budaya</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span>🗺️ Jalur Darat</span>
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>Berawal dari wilayah Tiongkok bagian utara, melewati:</p>
+                  <div class="rute-baris">
+                    <span class="rute-titik">Xi'an</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Gurun Taklamakan</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Asia Tengah</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Persia</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Timur Tengah</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Eropa</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span>⛵ Jalur Sutra Maritim</span>
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>
+                    Selain jalur darat, berkembang pula Jalur Sutra Maritim yang
+                    menghubungkan berbagai kawasan melalui laut.
+                    <strong
+                      >Jalur laut inilah yang memiliki hubungan paling erat
+                      dengan sejarah Indonesia.</strong
+                    >
+                  </p>
+                  <div class="rute-baris">
+                    <span class="rute-titik">Tiongkok</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Vietnam</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Thailand</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Semenanjung Malaya</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik highlight">Nusantara</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">India</span>
+                    <span class="rute-panah">→</span>
+                    <span class="rute-titik">Timur Tengah</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span>🚢 Jalur Sutra Maritim &amp; Nusantara</span>
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>
+                    Sejak zaman Dinasti Shang, daerah Sungai Kuning Tengah
+                    tempat asal kebudayaan Cina sudah mulai menjalin hubungan
+                    dengan kawasan lautan. Penyebutan Pulau Jawa sebagai salah
+                    satu tempat persinggahan baru ada sekitar
+                    <strong>tahun 412 SM</strong>, ketika seorang biksu Cina
+                    bernama <strong>Faxian (Fa Hien)</strong> menulis buku
+                    <em>Fo-Kuo Chi (Catatan Kerajaan Buddha)</em>. Di dalamnya
+                    ia menyebutkan bahwa ia berhasil mendarat di wilayah yang
+                    dinamakan <strong>Ye-Po-ti</strong> atau
+                    <em>Yawadwi(pa)</em> dalam bahasa Sansekerta. Dalam catatan
+                    Cina lain, wilayah Jawa juga dicatat dengan nama
+                    <strong>She-Po (Jawa)</strong>.
+                  </p>
+                  <p>
+                    Sejak abad ke-7, jalur laut menjadi semakin penting karena
+                    lebih cepat dan mampu mengangkut barang dalam jumlah besar.
+                    Nusantara memiliki posisi yang sangat strategis karena
+                    berada di persimpangan perdagangan dunia antara Tiongkok,
+                    India, dan Timur Tengah.
+                  </p>
+                  <div class="info-card-kecil">
+                    <p>
+                      <strong>Para pedagang singgah di Nusantara untuk:</strong>
+                    </p>
+                    <ul class="check-list">
+                      <li>Mengisi perbekalan</li>
+                      <li>Berdagang</li>
+                      <li>Menunggu perubahan arah angin muson</li>
+                    </ul>
+                    <p style="margin-top: 0.8rem">
+                      Akibatnya, banyak pedagang yang akhirnya
+                      <strong>menetap dan membentuk komunitas permanen</strong>
+                      di wilayah pesisir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /accordion-grup -->
+
+            <!-- Komoditas -->
+            <p class="sub-heading">🧵 Komoditas Utama yang Diperdagangkan</p>
+            <div class="tag-list">
+              <span class="tag">🧵 Sutra</span>
+              <span class="tag">🏺 Keramik</span>
+              <span class="tag">🍵 Teh</span>
+              <span class="tag">🪙 Logam mulia</span>
+              <span class="tag">🌿 Rempah-rempah</span>
+            </div>
+
+            <!-- Dampak -->
+            <p class="sub-heading">🌏 Dampak bagi Nusantara</p>
+            <ul class="dampak-list">
+              <li>Pertukaran budaya antara berbagai peradaban</li>
+              <li>Penyebaran agama Hindu, Buddha, dan Islam</li>
+              <li>Transfer teknologi dan ilmu pengetahuan</li>
+              <li>Mendorong pertumbuhan kota-kota pelabuhan</li>
+              <li>Interaksi dan akulturasi masyarakat multietnis</li>
+            </ul>
+          </div>
+        </div>
+        <!-- /konten-sutra -->
+
+        <!-- ══════════════════════════════════════════ -->
+        <!-- KONTEN: JALUR REMPAH                       -->
+        <!-- ══════════════════════════════════════════ -->
+        <div class="jalur-konten" id="konten-rempah">
+          <!-- Foto peta -->
+          <div class="jalur-peta-wrap">
+            <img
+              src="assets/peta-jalur-rempah.jpg"
+              alt="Peta Jalur Rempah"
+              class="jalur-foto"
+            />
+            <div class="foto-keterangan">
+              Jaringan Jalur Rempah — Nusantara sebagai pusat perdagangan dunia
+            </div>
+          </div>
+
+          <!-- Info utama -->
+          <div class="jalur-info">
+            <h3>Jalur Rempah: Harta Karun Nusantara</h3>
+
+            <!-- Accordion: Mengapa rempah berharga -->
+            <div class="accordion-grup">
+              <div class="accordion-item terbuka">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span>💰 Mengapa Rempah Begitu Berharga?</span>
+                  <span class="acc-arrow">▲</span>
+                </button>
+                <div class="accordion-isi" style="display: block">
+                  <p>
+                    Saat ini rempah-rempah mudah ditemukan di dapur. Namun pada
+                    masa lalu, rempah merupakan komoditas yang sangat mahal. Di
+                    Eropa, rempah digunakan untuk berbagai keperluan penting:
+                  </p>
+                  <div class="grid-2-kecil">
+                    <div class="mini-card">🥩 Mengawetkan makanan</div>
+                    <div class="mini-card">🍽️ Bumbu masakan</div>
+                    <div class="mini-card">💊 Obat-obatan</div>
+                    <div class="mini-card">🌸 Parfum</div>
+                    <div class="mini-card">👑 Simbol status sosial</div>
+                  </div>
+                  <div class="kutipan-kecil">
+                    "Karena nilainya yang tinggi, rempah sering disebut sebagai
+                    <strong>emas dari Timur.</strong>"
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span>🌍 Nusantara dalam Jaringan Perdagangan Dunia</span>
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>
+                    Sejak abad ke-7 hingga abad ke-15, kerajaan-kerajaan maritim
+                    di Nusantara menjadi bagian penting dalam perdagangan rempah
+                    dunia. Para pedagang dari berbagai bangsa bertemu di
+                    pelabuhan-pelabuhan Nusantara.
+                  </p>
+                  <p><strong>Pelabuhan-pelabuhan penting saat itu:</strong></p>
+                  <div class="tag-list">
+                    <span class="tag">Malaka</span>
+                    <span class="tag">Banten</span>
+                    <span class="tag">Tuban</span>
+                    <span class="tag">Gresik</span>
+                    <span class="tag">Demak</span>
+                    <span class="tag">Jepara</span>
+                    <span class="tag tag-highlight">Lasem</span>
+                    <span class="tag tag-highlight">Semarang</span>
+                  </div>
+                  <p>
+                    <strong>Pedagang dari berbagai bangsa yang bertemu:</strong>
+                  </p>
+                  <div class="tag-list">
+                    <span class="tag">🇨🇳 Tionghoa</span>
+                    <span class="tag">🕌 Arab</span>
+                    <span class="tag">🇮🇳 India</span>
+                    <span class="tag">🏛️ Persia</span>
+                    <span class="tag">🛶 Melayu</span>
+                    <span class="tag">⛵ Jawa</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span
+                    >👥 Pertemuan Pedagang Tionghoa dan Masyarakat Lokal</span
+                  >
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>
+                    Ketika para pedagang Tionghoa datang ke Nusantara melalui
+                    Jalur Rempah, tidak semua kembali ke negeri asalnya.
+                    Sebagian memilih untuk:
+                  </p>
+                  <ul class="check-list">
+                    <li>Menetap di kota-kota pelabuhan</li>
+                    <li>Menikah dengan penduduk lokal</li>
+                    <li>Membuka usaha perdagangan</li>
+                    <li>Membangun permukiman</li>
+                  </ul>
+                  <div class="info-card-kecil">
+                    <p>
+                      Dari sinilah lahir komunitas
+                      <strong>Tionghoa Peranakan</strong> yang menjadi jembatan
+                      antara budaya Tionghoa dan budaya lokal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAcc(this)">
+                  <span
+                    >📍 Mengapa Semarang, Lasem, dan Tangerang Penting?</span
+                  >
+                  <span class="acc-arrow">▼</span>
+                </button>
+                <div class="accordion-isi">
+                  <p>
+                    Ketiga daerah ini berkembang sebagai pusat perdagangan yang
+                    ramai pada masa Jalur Sutra Maritim dan Jalur Rempah.
+                  </p>
+                  <div class="kota-cards">
+                    <div class="kota-card">
+                      <div class="kota-nama">🏙️ Semarang</div>
+                      <p>
+                        Menjadi pelabuhan penting di pesisir utara Jawa yang
+                        mempertemukan pedagang Tionghoa dan masyarakat Jawa.
+                      </p>
+                    </div>
+                    <div class="kota-card">
+                      <div class="kota-nama">🏘️ Lasem</div>
+                      <p>
+                        Dikenal sebagai salah satu pemukiman Tionghoa tertua di
+                        Pulau Jawa dan pusat perdagangan maritim.
+                      </p>
+                    </div>
+                    <div class="kota-card">
+                      <div class="kota-nama">🌆 Tangerang</div>
+                      <p>
+                        Menjadi tempat berkembangnya komunitas Tionghoa Benteng
+                        yang memperlihatkan perpaduan budaya Tionghoa, Sunda,
+                        dan Betawi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /accordion-grup -->
+
+            <!-- Komoditas -->
+            <p class="sub-heading">🌶️ Komoditas Utama Nusantara</p>
+            <div class="tag-list">
+              <span class="tag">🌶️ Lada</span>
+              <span class="tag">🌿 Cengkeh</span>
+              <span class="tag">🪴 Pala</span>
+              <span class="tag">🫚 Kayu manis</span>
+              <span class="tag">🫚 Jahe</span>
+            </div>
+
+            <!-- Dampak -->
+            <p class="sub-heading">🌏 Dampak bagi Nusantara</p>
+            <ul class="dampak-list">
+              <li>Nusantara menjadi pusat perdagangan internasional</li>
+              <li>
+                Kemakmuran kerajaan-kerajaan maritim (Sriwijaya, Majapahit)
+              </li>
+              <li>Masuknya berbagai etnis termasuk masyarakat Tionghoa</li>
+              <li>Penyebaran Islam melalui pedagang Arab dan Gujarat</li>
+              <li>Kolonialisme Eropa yang dipicu persaingan rempah</li>
+            </ul>
+          </div>
+        </div>
+        <!-- /konten-rempah -->
+
+        <!-- ── BOX REFLEKSI ── -->
+        <div class="refleksi-box fade-in">
+          <div class="refleksi-icon">✨</div>
+          <p class="refleksi-label">Refleksi</p>
+          <p>
+            Jalur Sutra dan Jalur Rempah bukan sekadar jalur perdagangan.
+            Keduanya merupakan jembatan yang mempertemukan berbagai bangsa,
+            agama, bahasa, dan budaya. Melalui kedua jalur tersebut, masyarakat
+            Tionghoa dan masyarakat lokal Nusantara saling berinteraksi, bekerja
+            sama, dan membangun kehidupan bersama. Hasilnya adalah warisan
+            budaya yang masih dapat kita temukan hingga kini di Semarang, Lasem,
+            dan Tangerang.
+          </p>
+          <blockquote class="refleksi-kutipan">
+            "Setiap bangunan, makanan, dan tradisi yang kita lihat hari ini
+            menyimpan cerita panjang tentang pertemuan berbagai budaya di masa
+            lalu. Jadi bentuk akulturasi apa yang masih dapat kamu temukan di
+            daerah tempat tinggalmu?"
+          </blockquote>
+        </div>
+      </div>
+      <!-- /kontainer -->
+    </section>
+    <!-- ===================== /SECTION: JALUR PERDAGANGAN ===================== -->
+
+    <!-- ===================== SECTION: AKULTURASI ===================== -->
+    <section id="akulturasi">
+      <div class="kontainer">
+        <div class="section-header fade-in">
+          <span class="label-atas">✦ Akulturasi Budaya ✦</span>
+          <h2 class="section-judul">
+            Jejak Kedatangan & Warisan Budaya Tionghoa di Nusantara
+          </h2>
+          <p class="section-sub">
+            Telusuri jejak sejarah kedatangan, klenteng bersejarah, dan hasil
+            akulturasi budaya Tionghoa di Semarang, Lasem, dan Tangerang melalui
+            peta interaktif.
+          </p>
+        </div>
+
+        <!-- ── LAYOUT UTAMA: sidebar kiri + peta kanan ── -->
+        <div class="peta-layout fade-in">
+          <!-- SIDEBAR KIRI -->
+          <div class="peta-sidebar" id="peta-sidebar">
+            <!-- Default: intro -->
+            <div class="sidebar-intro" id="sidebar-intro">
+              <div class="sidebar-intro-ikon">🗺️</div>
+              <h3>Jejak Peradaban Tionghoa di Nusantara</h3>
+              <p>
+                Peta ini menampilkan tiga lapisan sejarah yang saling berkaitan
+                — jalur kedatangan, tempat ibadah bersejarah, dan warisan
+                akulturasi budaya yang masih hidup hingga hari ini.
+              </p>
+              <div class="sidebar-kategori-list">
+                <div class="sidebar-kat-item">
+                  <span class="kat-dot" style="background: #8b1a1a"></span>
+                  <span
+                    >Kedatangan — jalur dan titik pendaratan masyarakat
+                    Tionghoa</span
+                  >
+                </div>
+                <div class="sidebar-kat-item">
+                  <span class="kat-ikon">🏛️</span>
+                  <span>Klenteng — 11 klenteng bersejarah di 3 kota</span>
+                </div>
+                <div class="sidebar-kat-item">
+                  <span class="kat-ikon">🎨</span>
+                  <span
+                    >Akulturasi — 23 hasil perpaduan budaya Tionghoa-Lokal</span
+                  >
+                </div>
+              </div>
+              <p class="sidebar-hint">
+                👆 Klik marker di peta untuk membaca informasi lengkap.
+              </p>
+            </div>
+
+            <!-- Detail: muncul saat marker diklik -->
+            <div
+              class="sidebar-detail"
+              id="sidebar-detail"
+              style="display: none"
+            >
+              <button class="sidebar-kembali" onclick="tutupDetail()">
+                ← Kembali
+              </button>
+              <div class="sidebar-detail-isi" id="sidebar-detail-isi"></div>
+            </div>
+          </div>
+
+          <!-- PETA KANAN -->
+          <div class="peta-kanan">
+            <!-- Filter layer -->
+            <div class="peta-filter-bar">
+              <button
+                class="filter-btn aktif"
+                id="filter-jalursutra"
+                onclick="toggleLayer('jalursutra', this)"
+              >
+                <span class="filter-garis" style="background: #8b1a1a"></span>
+                Jalur Sutra
+              </button>
+              <button
+                class="filter-btn aktif"
+                id="filter-jalurrempah"
+                onclick="toggleLayer('jalurrempah', this)"
+              >
+                <span class="filter-garis" style="background: #b8860b"></span>
+                Jalur Rempah
+              </button>
+              <button
+                class="filter-btn aktif"
+                id="filter-kedatangan"
+                onclick="toggleLayer('kedatangan', this)"
+              >
+                <span class="filter-dot" style="background: #1a3a8b"></span>
+                Kedatangan
+              </button>
+              <div class="filter-sep"></div>
+              <button
+                class="filter-btn"
+                id="filter-klenteng"
+                onclick="toggleLayer('klenteng', this)"
+              >
+                <span class="filter-ikon">🏛️</span> Klenteng
+              </button>
+              <button
+                class="filter-btn"
+                id="filter-akulturasi"
+                onclick="toggleLayer('akulturasi', this)"
+              >
+                <span class="filter-ikon">🎨</span> Akulturasi
+              </button>
+            </div>
+
+            <div id="peta-interaktif" style="height: 580px; width: 100%"></div>
+
+            <!-- Tips navigasi -->
+            <div class="peta-tips">
+              <span>🖱️ Scroll untuk zoom</span>
+              <span>✋ Geser untuk navigasi</span>
+              <span>📍 Klik marker untuk info</span>
+            </div>
+          </div>
+        </div>
+        <!-- /peta-layout -->
+
+        <!-- ── TAB KONTEN BAWAH (Klenteng & Hasil Akulturasi tetap ada) ── -->
+        <div class="akul-tabs fade-in" style="margin-top: 3rem">
+          <button class="akul-tab aktif" onclick="gantiAkul('klenteng', this)">
+            🏛️ Klenteng Bersejarah
+          </button>
+          <button class="akul-tab" onclick="gantiAkul('hasil', this)">
+            🎨 Hasil Akulturasi
+          </button>
+        </div>
+
+        <!-- Tab Klenteng -->
+        <div class="akul-konten aktif" id="konten-klenteng">
+          <p class="akul-intro">
+            Klenteng merupakan simbol kehadiran dan identitas masyarakat
+            Tionghoa sekaligus bukti toleransi budaya di Nusantara. Klik kartu
+            untuk membaca sejarah lengkap.
+          </p>
+          <div class="hasil-kota-tabs">
+            <button
+              class="hasil-kota-tab aktif"
+              onclick="gantiKlenteng('semarang', this)"
+            >
+              🏙️ Semarang (4)
+            </button>
+            <button
+              class="hasil-kota-tab"
+              onclick="gantiKlenteng('lasem', this)"
+            >
+              🏮 Lasem (3)
+            </button>
+            <button
+              class="hasil-kota-tab"
+              onclick="gantiKlenteng('tangerang', this)"
+            >
+              🌆 Tangerang (4)
+            </button>
+          </div>
+
+          <div class="klenteng-konten aktif" id="klenteng-semarang">
+            <div class="klenteng-grid">
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('sampookong')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/sam-poo-kong.webp&quot;);
+                    background-color: #c4a87a;
+                  "
+                >
+                  <span class="klenteng-badge">Semarang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">Abad ke-15 · Simongan</div>
+                  <h4>Sam Poo Kong</h4>
+                  <p>
+                    Klenteng tertua di Semarang, dikaitkan dengan pelayaran
+                    Laksamana Zheng He. Awalnya berupa gua batu tempat
+                    beristirahat rombongan Cheng Ho.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('taykaksie')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/tay-kak-sie.jpg&quot;);
+                    background-color: #8b1a1a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Semarang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">
+                    1746–1771 · Pecinan Gang Lombok
+                  </div>
+                  <h4>Tay Kak Sie</h4>
+                  <p>
+                    Bermakna "Kuil Kesadaran Agung". Pusat Cap Gomeh tahunan.
+                    Terkenal dengan ukiran kayu klasik dan ornamen naga.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('siuhokbio')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/siu-hok-bio.jpg&quot;);
+                    background-color: #7a5c1a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Semarang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">1700–1753 · Pecinan</div>
+                  <h4>Siu Hok Bio</h4>
+                  <p>
+                    Bermakna "Klenteng Kebajikan Kecil". Tetap aktif bahkan pada
+                    masa Orde Baru ketika ekspresi budaya Tionghoa dibatasi.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('wiehwiekiong')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Wie-Hwie-Kiong.png&quot;);
+                    background-color: #1a3a8b;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Semarang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">±1814 · Semarang</div>
+                  <h4>Wie Hwie Kiong</h4>
+                  <p>
+                    Awalnya klenteng privat keluarga Marga Tan. Dibuka untuk
+                    umum sejak 1985.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="klenteng-konten" id="klenteng-lasem">
+            <div class="klenteng-grid">
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('cuankiong')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Cu-An-Kiong.png&quot;);
+                    background-color: #5c2d0e;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Lasem</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">±1450 · Lasem</div>
+                  <h4>Cu An Kiong</h4>
+                  <p>
+                    Salah satu klenteng tertua di Pulau Jawa. Didedikasikan
+                    untuk Dewi Laut Ma Zu. Arsitektur bergaya Fujian dengan
+                    dominasi kayu jati.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('gieyongbio')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Gie-Yong-Bio.png&quot;);
+                    background-color: #2d5c0e;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Lasem</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">1780 · Desa Babagan</div>
+                  <h4>Gie Yong Bio</h4>
+                  <p>
+                    Simbol akulturasi Tionghoa-Jawa paling kuat — menghormati
+                    Raden Panji Margono bersama pejuang Tionghoa melawan VOC.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('poanbio')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Poo-An-Bio.png&quot;);
+                    background-color: #0e3a5c;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Lasem</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">Abad ke-18 · Karangturi</div>
+                  <h4>Poo An Bio</h4>
+                  <p>
+                    Bermakna "Kuil Penjaga Kedamaian". Dibangun gotong royong
+                    komunitas Tionghoa Hokkien. Pusat aktivitas sosial Lasem.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="klenteng-konten" id="klenteng-tangerang">
+            <div class="klenteng-grid">
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('boentekbio')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Boen-Tek-Bio.png&quot;);
+                    background-color: #8b1a1a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Tangerang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">1684 · Petak Sembilan</div>
+                  <h4>Boen Tek Bio</h4>
+                  <p>
+                    Klenteng tertua di Tangerang. Bermakna "Kebijaksanaan dan
+                    Kebajikan". Jantung kehidupan sosial-keagamaan komunitas
+                    Cina Benteng.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('boensanbio')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Boen-San-Bio.png&quot;);
+                    background-color: #1a5c3a;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Tangerang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">1689 · Tangerang</div>
+                  <h4>Boen San Bio</h4>
+                  <p>
+                    Bermakna "Kuil Gunung Kebajikan". Pusat penyelenggara
+                    tradisi Peh Cun di Sungai Cisadane.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('boenhaybio')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Boen-Hay-Bio.png&quot;);
+                    background-color: #1a3a8b;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Tangerang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">1694 · Cisadane</div>
+                  <h4>Boen Hay Bio</h4>
+                  <p>
+                    Bermakna "Klenteng Kebajikan Seluas Samudera". Dibangun
+                    komunitas Cina Benteng di Sungai Cisadane.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+              <div
+                class="klenteng-card fade-in"
+                onclick="bukaSidebarDariKartu('tjosoekong')"
+              >
+                <div
+                  class="klenteng-img"
+                  style="
+                    background-image: url(&quot;assets/klenteng/Tjo-Soe-Kong.png&quot;);
+                    background-color: #5c3a0e;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 3rem;
+                  "
+                >
+                  <span class="klenteng-badge">Tangerang</span>
+                </div>
+                <div class="klenteng-body">
+                  <div class="klenteng-tahun">±1792 · Tanjung Kait</div>
+                  <h4>Tjo Soe Kong</h4>
+                  <p>
+                    Klenteng pesisir yang erat dengan kehidupan nelayan. Para
+                    nelayan datang memohon keselamatan dan hasil tangkapan yang
+                    baik.
+                  </p>
+                  <span class="klenteng-link">📖 Baca selengkapnya →</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Hasil Akulturasi -->
+        <div class="akul-konten" id="konten-hasil">
+          <p class="akul-intro">
+            Interaksi panjang antara masyarakat Tionghoa dan budaya lokal
+            menghasilkan karya budaya unik yang menjadi bagian tak terpisahkan
+            dari identitas Indonesia.
+          </p>
+          <div class="hasil-kota-tabs">
+            <button
+              class="hasil-kota-tab aktif"
+              onclick="gantiHasil('semarang', this)"
+            >
+              🏙️ Semarang (5)
+            </button>
+            <button class="hasil-kota-tab" onclick="gantiHasil('lasem', this)">
+              🏮 Lasem (7)
+            </button>
+            <button
+              class="hasil-kota-tab"
+              onclick="gantiHasil('tangerang', this)"
+            >
+              🌆 Tangerang (11)
+            </button>
+          </div>
+
+          <div class="hasil-konten aktif" id="hasil-semarang">
+            <div class="hasil-grid">
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('lumpia')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Lumpia-Semarang.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >                  
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Lumpia Semarang</h5>
+                  <p>
+                    Lahir abad ke-19 dari pernikahan Tjoa Thay Joe (Tionghoa)
+                    dan Wasih (Jawa). Teknik Tionghoa + bahan lokal seperti
+                    rebung dan udang.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('dugderan')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Tradisi-Dugderan.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Tradisi</div>
+                  <h5>Dugderan</h5>
+                  <p>
+                    Tradisi menyambut Ramadhan sejak ~1881. Maskot Warak
+                    Ngendog: kepala naga (Tionghoa) + badan buraq (Arab) + kaki
+                    kambing (Jawa).
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('mochi')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Kue-Mochi-Semarang.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Kue Mochi Semarang</h5>
+                  <p>
+                    Adaptasi mochi oleh masyarakat Tionghoa Semarang dengan
+                    taburan wijen khas, sejak pertengahan 1980-an di toko Moaci
+                    Gemini.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('gambang_smg')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Gambang-Semarang.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kesenian</div>
+                  <h5>Gambang Semarang</h5>
+                  <p>
+                    Berkembang ~1930-an. Perpaduan Kongahyan (Tionghoa) +
+                    gamelan Jawa + tari + lawak. Kesenian unik yang hanya ada di
+                    Semarang.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('chengho_festival')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Festival-Cheng-Ho.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Festival</div>
+                  <h5>Festival Cheng Ho</h5>
+                  <p>
+                    Perayaan tahunan di Sam Poo Kong mengenang Laksamana Zheng
+                    He. Kirab budaya, barongsai, dan doa lintas agama.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hasil-konten" id="hasil-lasem">
+            <div class="hasil-grid">
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('batik_lasem')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Batik-Tiga-Negeri.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kerajinan</div>
+                  <h5>Batik Tiga Negeri</h5>
+                  <p>
+                    Pewarnaan di 3 kota: Lasem (merah darah ayam), Pekalongan
+                    (biru), Surakarta (sogan). Motif naga berpadu kawung Jawa.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('cengbeng')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Tradisi-Ceng-Beng.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Tradisi</div>
+                  <h5>Ceng Beng (Qing Ming)</h5>
+                  <p>
+                    Tradisi ziarah makam leluhur. Di Lasem makanan sesaji
+                    merupakan perpaduan kuliner Tionghoa dan Jawa.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('lontong_tuyuhan')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Lontong-Tuyuhan.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Lontong Tuyuhan</h5>
+                  <p>
+                    Ayam kampung kuah santan khas pesisir Jawa sejak awal abad
+                    ke-20. Berkembang di kawasan Lasem.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('yopia')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Kue-Yopia.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Kue Yopia</h5>
+                  <p>
+                    Hasil akulturasi dari bakpia/tou luk pia Fujian. Berbeda
+                    dari bakpia Yogyakarta dengan ciri khas kulit dan cara
+                    pembakaran.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('kopi_lelet')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Kopi-Lelet.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Tradisi</div>
+                  <h5>Kopi Lelet</h5>
+                  <p>
+                    Tradisi "Nglelet" — menghias batang rokok dengan ampas kopi.
+                    Lahir akhir abad ke-19 dari pertemuan multietnis di Lasem.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('rumah_merah')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Rumah-Merah-Lasem.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Arsitektur</div>
+                  <h5>Rumah Merah Lasem</h5>
+                  <p>
+                    Kompleks rumah peranakan ~1860-an. Perpaduan arsitektur
+                    Tionghoa-Jawa-kolonial. Kini kawasan heritage dan pusat
+                    batik.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('masjid_lasem')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Masjid-Jami-Lasem.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Arsitektur Religi</div>
+                  <h5>Masjid Jami' Lasem</h5>
+                  <p>
+                    Berdiri ~1588 M. Ornamen unik: keramik Cina berlafazkan
+                    tulisan Arab — bukti akulturasi arsitektur religi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hasil-konten" id="hasil-tangerang">
+            <div class="hasil-grid">
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('cokek')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Tari-Cokek.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kesenian</div>
+                  <h5>Tari Cokek</h5>
+                  <p>
+                    Berkembang abad ke-19 dari pembauran Tionghoa-Betawi-Sunda.
+                    Selalu diiringi Gambang Kromong.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('gambang_kromong')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Gambang-Kromong.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kesenian</div>
+                  <h5>Gambang Kromong</h5>
+                  <p>
+                    Tehyan, Kongahyan, Sukong (Tionghoa) + gamelan Betawi-Sunda
+                    + lagu Melayu Betawi. Lahir abad ke-18.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('kue_keranjang')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Kue-Keranjang.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Kue Keranjang (Nian Gao)</h5>
+                  <p>
+                    Tradisi sejak Dinasti Han (~abad ke-2 SM). Simbol kemajuan
+                    dan keberuntungan. Dicetak bulat seperti keranjang.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('kue_bulan')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Kue-Bulan.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Kue Bulan (Mooncake)</h5>
+                  <p>
+                    Tradisi Dinasti Tang (abad ke-7). Di Tangerang isinya
+                    disesuaikan dengan kacang hijau sesuai selera lokal.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('laksa')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Laksa-Tangerang.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Laksa Tangerang</h5>
+                  <p>
+                    Berkembang abad ke-19 dari kuliner Fujian. Diadaptasi dengan
+                    kuah santan dan daun kemangi khas Betawi-Sunda.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('asinan_lanjin')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Asinan-Lanjin.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Asinan Lanjin</h5>
+                  <p>
+                    Kuliner khas Cina Benteng. Tradisi fermentasi sayur Tionghoa
+                    + cabai sesuai selera Betawi-Sunda. Dijual di Pasar Lama.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('bakcang')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Bakcang.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Bakcang</h5>
+                  <p>
+                    Tradisi 2.000 tahun terkait Festival Peh Cun. Di Nusantara
+                    isian diadaptasi: ayam, sapi, jamur, atau kacang.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('kue_ku')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Kue-Ku.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Kuliner</div>
+                  <h5>Kue Ku (Ang Ku Kueh)</h5>
+                  <p>
+                    Dari Fujian-Guangdong. "Kue kura-kura merah" — kura-kura
+                    melambangkan panjang umur, merah melambangkan kebahagiaan.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('pehcun')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Festival-Peh-Cun.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Festival</div>
+                  <h5>Festival Peh Cun Cisadane</h5>
+                  <p>
+                    Salah satu Peh Cun tertua di Indonesia sejak ~1910. Lomba
+                    perahu naga, makan bakcang, dan mendirikan telur.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('ciotao')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Cio-Tao.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Tradisi</div>
+                  <h5>Upacara Cio Tao</h5>
+                  <p>
+                    Tradisi "menyisir rambut" pra-nikah dari Fujian-Guangdong.
+                    Di Tangerang sudah beradaptasi dengan budaya lokal.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hasil-item fade-in"
+                onclick="bukaSidebarDariKartu('bahasa_cb')"
+              >
+                <div
+                  class="hasil-img"
+                  style="background-image: url('assets/hasilakulturasi/Bahasa-Cina-Benteng.png'); background-size: cover; background-position: center; background-color: #e8c07a;"
+                >
+                </div>
+                <div class="hasil-body">
+                  <div class="kategori">Bahasa</div>
+                  <h5>Bahasa Cina Benteng</h5>
+                  <p>
+                    Perpaduan Hokkian + Melayu + Betawi + Sunda. Contoh: "cici,
+                    koko" (Hokkian), "gue, lu" (Betawi). Terbentuk abad
+                    ke-17–19.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /konten-hasil -->
+      </div>
+      <!-- /kontainer -->
+    </section>
+
+    <!-- ===================== SECTION: KESIMPULAN ===================== -->
+    <section id="kesimpulan">
+      <div class="kontainer">
+        <div class="section-header fade-in">
+          <span class="label-atas">✦ Kesimpulan ✦</span>
+          <h2 class="section-judul">Warisan Budaya yang Mempersatukan</h2>
+          <p class="section-sub">
+            Poin-poin penting dari perjalanan akulturasi masyarakat Tionghoa di
+            Nusantara.
+          </p>
+        </div>
+
+        <!-- ── PARAGRAF PEMBUKA ── -->
+        <div class="kes-pembuka fade-in">
+          <p>
+            Kedatangan masyarakat Tionghoa ke Nusantara melalui Jalur Sutra
+            Maritim dan Jalur Rempah telah membawa berbagai pengaruh dalam
+            kehidupan masyarakat pesisir Indonesia. Di
+            <strong>Semarang, Lasem, dan Tangerang</strong>, interaksi antara
+            penduduk Tionghoa dengan masyarakat lokal tidak menghasilkan
+            penggantian budaya, melainkan <strong>akulturasi</strong> — proses
+            percampuran dua budaya yang melahirkan bentuk budaya baru tanpa
+            menghilangkan identitas budaya asalnya.
+          </p>
+        </div>
+
+        <!-- ── ASPEK AKULTURASI (TAB INTERAKTIF) ── -->
+        <div class="kes-blok fade-in">
+          <h3 class="kes-sub-judul">
+            🔍 Akulturasi dalam Berbagai Aspek Kehidupan
+          </h3>
+          <p class="kes-keterangan">
+            Proses akulturasi dapat dilihat dari berbagai bidang kehidupan.
+            Pilih bidang untuk melihat contohnya.
+          </p>
+
+          <div class="aspek-tabs">
+            <button
+              class="aspek-tab aktif"
+              onclick="gantiAspek('arsitektur', this)"
+            >
+              🏛️ Arsitektur
+            </button>
+            <button class="aspek-tab" onclick="gantiAspek('kesenian', this)">
+              🎭 Kesenian
+            </button>
+            <button class="aspek-tab" onclick="gantiAspek('kuliner', this)">
+              🍜 Kuliner
+            </button>
+            <button class="aspek-tab" onclick="gantiAspek('tradisi', this)">
+              🎊 Tradisi
+            </button>
+          </div>
+
+          <div class="aspek-konten aktif" id="aspek-arsitektur">
+            <div class="aspek-isi">
+              <div class="aspek-ikon-besar">🏛️</div>
+              <div>
+                <p>
+                  Pada bidang arsitektur, akulturasi terlihat pada
+                  <strong>klenteng-klenteng bersejarah</strong>,
+                  <strong>Rumah Merah Lasem</strong>, dan bangunan-bangunan tua
+                  yang memadukan unsur Tionghoa, Jawa, dan kolonial menjadi satu
+                  harmoni yang khas.
+                </p>
+                <div class="aspek-contoh-list">
+                  <span class="aspek-contoh">🏯 Klenteng bersejarah</span>
+                  <span class="aspek-contoh">🏚️ Rumah Merah Lasem</span>
+                  <span class="aspek-contoh">🏛️ Bangunan peranakan</span>
+                  <span class="aspek-contoh">🏘️ Kawasan Pecinan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="aspek-konten" id="aspek-kesenian">
+            <div class="aspek-isi">
+              <div class="aspek-ikon-besar">🎭</div>
+              <div>
+                <p>
+                  Dalam bidang kesenian, akulturasi tercermin melalui seni
+                  pertunjukan yang menggabungkan alat musik, gerak tari, serta
+                  nilai budaya dari berbagai etnis secara harmonis.
+                </p>
+                <div class="aspek-contoh-list">
+                  <span class="aspek-contoh">🎵 Gambang Semarang</span>
+                  <span class="aspek-contoh">🥁 Gambang Kromong</span>
+                  <span class="aspek-contoh">💃 Tari Cokek</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="aspek-konten" id="aspek-kuliner">
+            <div class="aspek-isi">
+              <div class="aspek-ikon-besar">🍜</div>
+              <div>
+                <p>
+                  Pada bidang kuliner, lahir beragam makanan khas yang
+                  menunjukkan perpaduan tradisi kuliner Tionghoa dan Nusantara —
+                  nikmat sekaligus bernilai budaya tinggi.
+                </p>
+                <div class="aspek-contoh-list">
+                  <span class="aspek-contoh">🥟 Lumpia Semarang</span>
+                  <span class="aspek-contoh">🍪 Yopia</span>
+                  <span class="aspek-contoh">🍲 Laksa Tangerang</span>
+                  <span class="aspek-contoh">🎂 Kue Keranjang</span>
+                  <span class="aspek-contoh">🔴 Kue Ku</span>
+                  <span class="aspek-contoh">🍱 Bakcang</span>
+                  <span class="aspek-contoh">🍛 Lontong Tuyuhan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="aspek-konten" id="aspek-tradisi">
+            <div class="aspek-isi">
+              <div class="aspek-ikon-besar">🎊</div>
+              <div>
+                <p>
+                  Dalam bidang tradisi dan kehidupan sosial, akulturasi tampak
+                  pada berbagai perayaan yang terus berkembang mengikuti kondisi
+                  masyarakat Indonesia hingga hari ini.
+                </p>
+                <div class="aspek-contoh-list">
+                  <span class="aspek-contoh">⛵ Festival Cheng Ho</span>
+                  <span class="aspek-contoh">🕯️ Ceng Beng</span>
+                  <span class="aspek-contoh">🐉 Peh Cun</span>
+                  <span class="aspek-contoh">🙏 Upacara Cio Tao</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── KESIMPULAN UTAMA ── -->
+        <div class="kes-blok fade-in">
+          <h3 class="kes-sub-judul">🌏 Keberagaman sebagai Kekuatan</h3>
+          <p class="kes-teks">
+            Akulturasi budaya Tionghoa dan budaya lokal di ketiga wilayah
+            tersebut menunjukkan bahwa keberagaman tidak selalu menimbulkan
+            perbedaan yang memisahkan. Sebaliknya, pertemuan budaya dapat
+            menghasilkan
+            <strong>kreativitas, inovasi, dan identitas budaya baru</strong>
+            yang memperkaya kehidupan masyarakat. Berbagai warisan budaya yang
+            masih bertahan hingga saat ini menjadi bukti bahwa hubungan antara
+            masyarakat Tionghoa dan masyarakat lokal telah berlangsung secara
+            <strong>damai dan harmonis selama berabad-abad</strong>.
+          </p>
+        </div>
+
+        <!-- ── NILAI-NILAI PENTING (KARTU FLIP / HOVER) ── -->
+        <div class="kes-blok fade-in">
+          <h3 class="kes-sub-judul">💎 Nilai-Nilai yang Relevan Hingga Kini</h3>
+          <p class="kes-keterangan">
+            Dari proses akulturasi tersebut, terdapat nilai-nilai penting yang
+            masih relevan untuk dipelajari. Arahkan kursor ke kartu untuk
+            membaca penjelasannya.
+          </p>
+
+          <div class="nilai-grid">
+            <div class="nilai-card">
+              <div class="nilai-depan">
+                <span class="nilai-angka">01</span>
+                <span class="nilai-ikon">🤝</span>
+                <p class="nilai-judul">Toleransi</p>
+              </div>
+              <div class="nilai-belakang">
+                <p>
+                  Sikap saling menghormati perbedaan budaya, agama, dan tradisi
+                  antarsesama anggota masyarakat.
+                </p>
+              </div>
+            </div>
+
+            <div class="nilai-card">
+              <div class="nilai-depan">
+                <span class="nilai-angka">02</span>
+                <span class="nilai-ikon">👐</span>
+                <p class="nilai-judul">Gotong Royong</p>
+              </div>
+              <div class="nilai-belakang">
+                <p>
+                  Keterlibatan berbagai kelompok masyarakat dalam menjaga dan
+                  melestarikan warisan budaya bersama.
+                </p>
+              </div>
+            </div>
+
+            <div class="nilai-card">
+              <div class="nilai-depan">
+                <span class="nilai-angka">03</span>
+                <span class="nilai-ikon">🌐</span>
+                <p class="nilai-judul">Keterbukaan</p>
+              </div>
+              <div class="nilai-belakang">
+                <p>
+                  Kemampuan menerima pengaruh budaya luar tanpa kehilangan
+                  identitas budaya sendiri.
+                </p>
+              </div>
+            </div>
+
+            <div class="nilai-card">
+              <div class="nilai-depan">
+                <span class="nilai-angka">04</span>
+                <span class="nilai-ikon">✨</span>
+                <p class="nilai-judul">Kreativitas</p>
+              </div>
+              <div class="nilai-belakang">
+                <p>
+                  Akulturasi mampu melahirkan karya-karya baru yang unik dan
+                  bernilai tinggi bagi peradaban.
+                </p>
+              </div>
+            </div>
+
+            <div class="nilai-card nilai-card-lebar">
+              <div class="nilai-depan">
+                <span class="nilai-angka">05</span>
+                <span class="nilai-ikon">🇮🇩</span>
+                <p class="nilai-judul">Persatuan dalam Keberagaman</p>
+              </div>
+              <div class="nilai-belakang">
+                <p>
+                  Perbedaan latar belakang budaya dapat menjadi kekuatan untuk
+                  membangun kehidupan masyarakat yang harmonis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PARAGRAF PENUTUP ── -->
+        <div class="kes-blok fade-in">
+          <p class="kes-teks">
+            Melalui pembelajaran mengenai akulturasi budaya Tionghoa dan budaya
+            lokal di Semarang, Lasem, dan Tangerang, kita dapat memahami bahwa
+            <strong
+              >Indonesia dibangun oleh interaksi berbagai bangsa dan
+              budaya</strong
+            >. Oleh karena itu, warisan budaya yang ada saat ini bukan hanya
+            peninggalan masa lalu, tetapi juga sumber pembelajaran yang
+            mengajarkan pentingnya toleransi, penghargaan terhadap keberagaman,
+            serta semangat persatuan dalam kehidupan bermasyarakat, berbangsa,
+            dan bernegara.
+          </p>
+        </div>
+
+        <!-- ── REFLEKSI ── -->
+        <div class="kes-refleksi fade-in">
+          <div class="kes-refleksi-ikon">💡</div>
+          <p class="kes-refleksi-label">Refleksi untuk Peserta Didik</p>
+          <blockquote class="kes-refleksi-kutipan">
+            "Jika masyarakat Tionghoa dan masyarakat lokal pada masa lalu mampu
+            hidup berdampingan, saling belajar, dan menciptakan budaya baru
+            bersama — bagaimana cara kita menerapkan semangat toleransi dan
+            keberagaman tersebut dalam kehidupan sehari-hari saat ini?"
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== /SECTION: KESIMPULAN ===================== -->
+
+    <!-- KUIS -->
+    <!-- ===================== SECTION: KUIS ===================== -->
+    <section id="kuis">
+      <div class="kontainer">
+        <div class="section-header fade-in">
+          <span class="label-atas">✦ Uji Pemahamanmu ✦</span>
+          <h2 class="section-judul">Kuis Interaktif</h2>
+          <p class="section-sub">
+            Jawab 10 soal berikut untuk mengukur pemahamanmu tentang akulturasi
+            budaya dan jalur perdagangan Nusantara.
+          </p>
+        </div>
+
+        <div class="kuis-wrap fade-in">
+          <!-- KUIS BOX -->
+          <div class="kuis-box">
+            <!-- STEP 1: Form Identitas -->
+            <div id="kuis-identitas">
+              <div class="identitas-header">
+                <div class="identitas-ikon">📋</div>
+                <h3>Sebelum Mulai Kuis</h3>
+                <p>
+                  Isi data diri terlebih dahulu agar hasil kuis dapat tercatat
+                  untuk penelitian.
+                </p>
+              </div>
+              <div class="identitas-form">
+                <div class="form-grup">
+                  <label for="input-nama"
+                    >Nama Lengkap <span class="wajib">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="input-nama"
+                    placeholder="Masukkan nama lengkap..."
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="form-baris">
+                  <div class="form-grup">
+                    <label for="input-kelas"
+                      >Kelas <span class="wajib">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="input-kelas"
+                      placeholder="Contoh: XI IPS 2"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="form-grup">
+                    <label for="input-sekolah"
+                      >Sekolah <span class="opsional">(opsional)</span></label
+                    >
+                    <input
+                      type="text"
+                      id="input-sekolah"
+                      placeholder="Nama sekolah"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <p class="identitas-error" id="identitas-error">
+                  ⚠️ Nama dan kelas wajib diisi.
+                </p>
+                <button class="btn-mulai-kuis" onclick="mulaiKuis()">
+                  Mulai Kuis →
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2: Soal Kuis -->
+            <div id="kuis-utama" style="display: none">
+              <div class="kuis-header">
+                <div class="kuis-header-kiri">
+                  <h3 id="kuis-judul-soal">Soal 1 dari 10</h3>
+                  <p class="kuis-nama-siswa" id="kuis-nama-siswa"></p>
+                </div>
+                <span class="kuis-progress-text" id="kuis-persen">10%</span>
+              </div>
+              <div class="kuis-progress-bar">
+                <div
+                  class="kuis-progress-fill"
+                  id="kuis-bar"
+                  style="width: 10%"
+                ></div>
+              </div>
+              <div class="kuis-body" id="kuis-body">
+                <p class="kuis-soal" id="kuis-pertanyaan">Memuat soal...</p>
+                <div
+                  id="kuis-gambar-wrap"
+                  style="display: none; margin-bottom: 1.2rem"
+                >
+                  <img
+                    id="kuis-gambar"
+                    src=""
+                    alt="Gambar soal"
+                    style="
+                      max-width: 100%;
+                      max-height: 220px;
+                      object-fit: contain;
+                      border-radius: 8px;
+                      border: 1px solid var(--krem-gelap);
+                    "
+                  />
+                </div>
+                <ul class="pilihan-list" id="kuis-pilihan"></ul>
+                <div
+                  class="kuis-feedback"
+                  id="kuis-feedback"
+                  style="display: none"
+                ></div>
+              </div>
+              <div class="kuis-footer">
+                <button
+                  class="btn-lanjut"
+                  id="btn-lanjut"
+                  onclick="soalBerikut()"
+                >
+                  Selanjutnya →
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: Hasil -->
+            <div class="hasil-kuis" id="hasil-kuis">
+              <div class="trophy">🏆</div>
+              <p class="skor-label">Skor Akhir</p>
+              <p class="skor-angka" id="skor-tampil">0 / 100</p>
+              <div class="bintang-wrap" id="bintang-tampil"></div>
+              <p class="pesan" id="pesan-tampil"></p>
+              <div class="simpan-status" id="simpan-status">
+                <span>⏳</span> Menyimpan hasil ke database...
+              </div>
+              <div class="hasil-review" id="hasil-review"></div>
+              <div class="hasil-aksi">
+                <button class="btn-merah" onclick="ulangiKuis()">
+                  🔄 Ulangi Kuis
+                </button>
+                <a
+                  href="#beranda"
+                  class="btn-outline"
+                  style="border-color: var(--merah); color: var(--merah)"
+                  >🏠 Beranda</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- /kuis-box -->
+
+          <!-- LEADERBOARD -->
+          <div class="leaderboard-box">
+            <div class="lb-header">
+              <span class="lb-judul">🏅 Leaderboard</span>
+              <button
+                class="lb-refresh"
+                onclick="muatLeaderboard()"
+                title="Refresh"
+              >
+                ↺
+              </button>
+            </div>
+            <div class="lb-body" id="lb-body">
+              <div class="lb-loading">Memuat data...</div>
+            </div>
+            <p class="lb-info">Diperbarui otomatis setiap kuis selesai</p>
+          </div>
+        </div>
+        <!-- /kuis-wrap -->
+      </div>
+    </section>
+    <!-- <section id="kuis">
+      <div class="kontainer">
+        <div class="section-header fade-in">
+          <span class="label-atas">✦ Uji Pemahamanmu ✦</span>
+          <h2 class="section-judul">Kuis Interaktif</h2>
+          <p class="section-sub">
+            Jawab 10 soal berikut untuk mengukur pemahamanmu tentang akulturasi
+            budaya dan jalur perdagangan Nusantara.
+          </p>
+        </div>
+
+        <div class="kuis-box fade-in">
+          <div class="kuis-header">
+            <h3 id="kuis-judul-soal">Soal 1 dari 10</h3>
+            <span class="kuis-progress-text" id="kuis-persen">10%</span>
+          </div>
+          <div class="kuis-progress-bar">
+            <div
+              class="kuis-progress-fill"
+              id="kuis-bar"
+              style="width: 10%"
+            ></div>
+          </div>
+
+          <div class="kuis-body" id="kuis-body">
+            <p class="kuis-soal" id="kuis-pertanyaan">Memuat soal...</p>
+            <ul class="pilihan-list" id="kuis-pilihan"></ul>
+          </div>
+
+          <div class="kuis-footer">
+            <button class="btn-lanjut" id="btn-lanjut" onclick="soalBerikut()">
+              Selanjutnya →
+            </button>
+          </div>
+
+          <div class="hasil-kuis" id="hasil-kuis">
+            <div class="trophy">🏆</div>
+            <p class="skor-label">Skor Akhir</p>
+            <p class="skor-angka" id="skor-tampil">0 / 100</p>
+            <div class="bintang-wrap" id="bintang-tampil"></div>
+            <p class="pesan" id="pesan-tampil"></p>
+            <div
+              style="
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+                flex-wrap: wrap;
+              "
+            >
+              <button class="btn-merah" onclick="ulangiKuis()">
+                🔄 Ulangi Kuis
+              </button>
+              <a
+                href="#beranda"
+                class="btn-outline"
+                style="border-color: var(--merah); color: var(--merah)"
+                >🏠 Kembali ke Beranda</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        ⛵
+        <strong>Jejak Akulturasi Masyarakat Tionghoa dan Budaya Lokal</strong>
+      </p>
+      <p style="margin-top: 6px; opacity: 0.6">
+        Semarang · Lasem · Tangerang &nbsp;|&nbsp; Peneliti / Nur Aeni Marta ·
+        Universitas Negeri Jakarta · 2026
+      </p>
+    </footer>
+
+    <script>
+      // NAVBAR
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+      document.querySelectorAll(".nav-links a").forEach((a) => {
+        a.addEventListener("click", () =>
+          document.getElementById("navLinks").classList.remove("open"),
+        );
+      });
+
+      // ── TOGGLE TAB JALUR ──
+      function gantiJalur(id, btn) {
+        // semua konten disembunyikan
+        document.querySelectorAll(".jalur-konten").forEach((el) => {
+          el.classList.remove("aktif");
+        });
+        // semua tombol dinonaktifkan
+        document.querySelectorAll(".jalur-tab").forEach((el) => {
+          el.classList.remove("aktif");
+        });
+        // aktifkan yang dipilih
+        document.getElementById("konten-" + id).classList.add("aktif");
+        btn.classList.add("aktif");
+      }
+
+      // ── TOGGLE ACCORDION ──
+      function toggleAcc(btn) {
+        const item = btn.closest(".accordion-item");
+        const isi = item.querySelector(".accordion-isi");
+        const arrow = btn.querySelector(".acc-arrow");
+        const isOpen = isi.style.display === "block";
+
+        if (isOpen) {
+          isi.style.display = "none";
+          arrow.textContent = "▼";
+          item.classList.remove("terbuka");
+        } else {
+          isi.style.display = "block";
+          arrow.textContent = "▲";
+          item.classList.add("terbuka");
+        }
+      }
+
+      // TABS: AKULTURASI
+      function gantiAkul(id, el) {
+        document
+          .querySelectorAll(".akul-tab")
+          .forEach((t) => t.classList.remove("aktif"));
+        document
+          .querySelectorAll(".akul-konten")
+          .forEach((c) => c.classList.remove("aktif"));
+        el.classList.add("aktif");
+        document.getElementById("konten-" + id).classList.add("aktif");
+      }
+
+      // TABS: HASIL
+      function gantiHasil(id, el) {
+        document
+          .querySelectorAll(".hasil-kota-tab")
+          .forEach((t) => t.classList.remove("aktif"));
+        document
+          .querySelectorAll(".hasil-konten")
+          .forEach((c) => c.classList.remove("aktif"));
+        el.classList.add("aktif");
+        document.getElementById("hasil-" + id).classList.add("aktif");
+      }
+
+      // FADE IN
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("tampil");
+          });
+        },
+        { threshold: 0.12 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+
+      // KESIMPULAN
+      function gantiAspek(id, btn) {
+        document.querySelectorAll(".aspek-konten").forEach((el) => {
+          el.classList.remove("aktif");
+        });
+        document.querySelectorAll(".aspek-tab").forEach((el) => {
+          el.classList.remove("aktif");
+        });
+        document.getElementById("aspek-" + id).classList.add("aktif");
+        btn.classList.add("aktif");
+      }
+
+      // KUIS
+      // const soalData = [
+      //   {
+      //     soal: "Apa tujuan utama Jalur Rempah bagi Nusantara?",
+      //     pilihan: [
+      //       "Penyebaran agama Islam",
+      //       "Perdagangan rempah-rempah",
+      //       "Penjelajahan wilayah",
+      //       "Wisata dan perjalanan",
+      //     ],
+      //     jawaban: 1,
+      //   },
+      //   {
+      //     soal: "Klenteng Sam Poo Kong berada di kota mana?",
+      //     pilihan: ["Lasem", "Tangerang", "Semarang", "Jakarta"],
+      //     jawaban: 2,
+      //   },
+      //   {
+      //     soal: "Masyarakat Cina Benteng adalah komunitas Tionghoa yang menetap di...",
+      //     pilihan: ["Semarang", "Lasem", "Surabaya", "Tangerang"],
+      //     jawaban: 3,
+      //   },
+      //   {
+      //     soal: "Lumpia Semarang merupakan hasil akulturasi antara masakan Tionghoa dan...",
+      //     pilihan: [
+      //       "Masakan Betawi",
+      //       "Bahan lokal seperti rebung",
+      //       "Masakan Arab",
+      //       "Masakan India",
+      //     ],
+      //     jawaban: 1,
+      //   },
+      //   {
+      //     soal: "Lasem dikenal dengan julukan apa?",
+      //     pilihan: [
+      //       "Kota Batik",
+      //       "Tiongkok Kecil di Jawa",
+      //       "Kota Seribu Klenteng",
+      //       "Kota Pelabuhan Emas",
+      //     ],
+      //     jawaban: 1,
+      //   },
+      //   {
+      //     soal: "Jalur Sutra berlangsung dari sekitar abad ke...",
+      //     pilihan: [
+      //       "5 M hingga 10 M",
+      //       "2 SM hingga 15 M",
+      //       "1 SM hingga 5 M",
+      //       "10 M hingga 20 M",
+      //     ],
+      //     jawaban: 1,
+      //   },
+      //   {
+      //     soal: "Batik Lasem dipengaruhi oleh budaya Tionghoa, terlihat dari...",
+      //     pilihan: [
+      //       "Motif wayang kulit",
+      //       "Motif naga dan bunga teratai",
+      //       "Motif batik Solo",
+      //       "Motif fauna lokal",
+      //     ],
+      //     jawaban: 1,
+      //   },
+      //   {
+      //     soal: "Dugderan adalah tradisi khas Semarang yang merupakan perpaduan budaya...",
+      //     pilihan: [
+      //       "Tionghoa, Jawa, dan Arab",
+      //       "Belanda, Jawa, dan India",
+      //       "Tionghoa dan Betawi",
+      //       "Melayu dan Jawa",
+      //     ],
+      //     jawaban: 0,
+      //   },
+      //   {
+      //     soal: "Gambang Kromong adalah kesenian musik perpaduan antara...",
+      //     pilihan: [
+      //       "Gamelan Sunda dan Betawi",
+      //       "Alat musik Tionghoa dan Gamelan Betawi",
+      //       "Alat musik Arab dan Jawa",
+      //       "Musik Eropa dan Jawa",
+      //     ],
+      //     jawaban: 1,
+      //   },
+      //   {
+      //     soal: "Apa dampak utama kehadiran masyarakat Tionghoa di Nusantara?",
+      //     pilihan: [
+      //       "Hilangnya budaya lokal",
+      //       "Konflik berkepanjangan",
+      //       "Akulturasi budaya yang memperkaya Nusantara",
+      //       "Dominasi budaya Tionghoa",
+      //     ],
+      //     jawaban: 2,
+      //   },
+      // ];
+
+      // let soalSekarang = 0;
+      // let skor = 0;
+      // let sudahJawab = false;
+      // const huruf = ["A", "B", "C", "D"];
+
+      // function tampilSoal() {
+      //   const s = soalData[soalSekarang];
+      //   const nomor = soalSekarang + 1;
+      //   const persen = Math.round((nomor / soalData.length) * 100);
+
+      //   document.getElementById("kuis-judul-soal").textContent =
+      //     `Soal ${nomor} dari ${soalData.length}`;
+      //   document.getElementById("kuis-persen").textContent = persen + "%";
+      //   document.getElementById("kuis-bar").style.width = persen + "%";
+      //   document.getElementById("kuis-pertanyaan").textContent = s.soal;
+
+      //   const ul = document.getElementById("kuis-pilihan");
+      //   ul.innerHTML = "";
+      //   s.pilihan.forEach((p, i) => {
+      //     const li = document.createElement("li");
+      //     const btn = document.createElement("button");
+      //     btn.className = "pilihan-btn";
+      //     btn.innerHTML = `<span class="pilihan-huruf">${huruf[i]}</span> ${p}`;
+      //     btn.onclick = () => pilih(i, btn);
+      //     li.appendChild(btn);
+      //     ul.appendChild(li);
+      //   });
+
+      //   document.getElementById("btn-lanjut").style.display = "none";
+      //   sudahJawab = false;
+      // }
+
+      // function pilih(idx, btn) {
+      //   if (sudahJawab) return;
+      //   sudahJawab = true;
+      //   const s = soalData[soalSekarang];
+      //   const semua = document.querySelectorAll(".pilihan-btn");
+
+      //   semua.forEach((b, i) => {
+      //     b.disabled = true;
+      //     if (i === s.jawaban) b.classList.add("benar");
+      //     else if (b === btn && i !== s.jawaban) b.classList.add("salah");
+      //   });
+
+      //   if (idx === s.jawaban) skor++;
+
+      //   const btnLanjut = document.getElementById("btn-lanjut");
+      //   btnLanjut.style.display = "block";
+      //   if (soalSekarang === soalData.length - 1)
+      //     btnLanjut.textContent = "Lihat Hasil 🎉";
+      //   else btnLanjut.textContent = "Selanjutnya →";
+      // }
+
+      // function soalBerikut() {
+      //   soalSekarang++;
+      //   if (soalSekarang >= soalData.length) {
+      //     tampilHasil();
+      //   } else {
+      //     tampilSoal();
+      //   }
+      // }
+
+      // function tampilHasil() {
+      //   document.getElementById("kuis-body").style.display = "none";
+      //   document.querySelector(".kuis-footer").style.display = "none";
+      //   const hasilDiv = document.getElementById("hasil-kuis");
+      //   hasilDiv.style.display = "block";
+
+      //   const nilai = Math.round((skor / soalData.length) * 100);
+      //   document.getElementById("skor-tampil").textContent = `${nilai} / 100`;
+
+      //   let bintang = 1;
+      //   if (nilai >= 90) bintang = 5;
+      //   else if (nilai >= 75) bintang = 4;
+      //   else if (nilai >= 60) bintang = 3;
+      //   else if (nilai >= 40) bintang = 2;
+
+      //   let bintangHTML = "";
+      //   for (let i = 1; i <= 5; i++) bintangHTML += i <= bintang ? "⭐" : "☆";
+      //   document.getElementById("bintang-tampil").innerHTML = bintangHTML;
+
+      //   let pesan = "";
+      //   if (nilai >= 90)
+      //     pesan =
+      //       "Luar biasa! Kamu benar-benar menguasai materi akulturasi budaya ini. Pertahankan!";
+      //   else if (nilai >= 75)
+      //     pesan =
+      //       "Bagus sekali! Pemahamanmu sudah sangat baik tentang sejarah Tionghoa di Nusantara.";
+      //   else if (nilai >= 60)
+      //     pesan = "Cukup baik! Teruslah belajar untuk memperdalami materinya.";
+      //   else if (nilai >= 40)
+      //     pesan =
+      //       "Lumayan! Coba pelajari kembali materi tentang jalur perdagangan dan akulturasi budaya.";
+      //   else pesan = "Jangan menyerah! Baca kembali materi dan coba lagi ya!";
+
+      //   document.getElementById("pesan-tampil").textContent = pesan;
+      // }
+
+      // function ulangiKuis() {
+      //   soalSekarang = 0;
+      //   skor = 0;
+      //   document.getElementById("kuis-body").style.display = "block";
+      //   document.querySelector(".kuis-footer").style.display = "flex";
+      //   document.getElementById("hasil-kuis").style.display = "none";
+      //   tampilSoal();
+      // }
+
+      // // Mulai kuis saat halaman dimuat
+      // window.addEventListener("load", tampilSoal);
+      // ================================================================
+      // KUIS INTERAKTIF — JS LENGKAP
+      // Ganti APPS_SCRIPT_URL dengan URL deployment Google Apps Script kamu
+      // ================================================================
+
+      const APPS_SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbw_JOcrvLa4O8UBqiYjx-gvpF-7mmkDFb0_TAQv8GW_v9gfeQgnbcyHFUsmUw9fRq5X/exec";
+
+      // ── DATA SOAL (dari PDF) ──
+      const soalData = [
+        {
+          soal: "Seorang wisatawan menemukan makanan yang menggunakan teknik memasak Tionghoa, tetapi bahan utamanya berupa rebung yang banyak ditemukan di Jawa. Makanan yang paling tepat menggambarkan kondisi tersebut adalah ....",
+          pilihan: [
+            "Laksa Tangerang",
+            "Bakcang",
+            "Lumpia Semarang",
+            "Kue Keranjang",
+            "Kue Ku",
+          ],
+          jawaban: 2,
+          penjelasan:
+            "Lumpia Semarang merupakan hasil akulturasi karena memadukan teknik kuliner Tionghoa dengan bahan lokal Indonesia seperti rebung.",
+        },
+        {
+          soal: "Perhatikan data berikut!\n1) Gambang Kromong memadukan alat musik Tionghoa dan Betawi.\n2) Kue Keranjang digunakan dalam perayaan Imlek.\n3) Batik Lasem menggunakan motif naga dan motif lokal.\n4) Rumah Merah Lasem memadukan arsitektur Tionghoa, Jawa, dan kolonial.\n\nData yang menunjukkan proses akulturasi budaya ditunjukkan oleh nomor ....",
+          pilihan: [
+            "1, 2, dan 3",
+            "1, 2, dan 4",
+            "1, 3, dan 4",
+            "2, 3, dan 4",
+            "1, 2, 3, dan 4",
+          ],
+          jawaban: 2,
+          penjelasan:
+            "Akulturasi budaya ditunjukkan oleh perpaduan unsur Tionghoa dan lokal dalam kesenian (Gambang Kromong), batik (Batik Lasem), dan arsitektur (Rumah Merah Lasem). Kue Keranjang untuk Imlek tidak menunjukkan akulturasi karena murni tradisi Tionghoa.",
+        },
+        {
+          soal: "Keberadaan Klenteng Sam Poo Kong di Semarang sering dikaitkan dengan pelayaran Cheng Ho. Dari sudut pandang sejarah akulturasi, keberadaan klenteng tersebut menunjukkan bahwa ....",
+          gambar: "assets/soal/sam-poo-kong.jpg",
+          pilihan: [
+            "Budaya lokal sepenuhnya digantikan budaya Tionghoa",
+            "Interaksi antar budaya dapat menghasilkan warisan budaya baru",
+            "Budaya Tionghoa berkembang tanpa pengaruh masyarakat setempat",
+            "Masyarakat Jawa menolak kehadiran budaya asing",
+            "Perdagangan tidak berpengaruh terhadap perkembangan budaya",
+          ],
+          jawaban: 1,
+          penjelasan:
+            "Klenteng Sam Poo Kong menunjukkan akulturasi karena menjadi bukti interaksi budaya Tionghoa dengan masyarakat lokal yang menghasilkan warisan budaya baru — dihormati oleh berbagai kalangan hingga kini.",
+        },
+        {
+          soal: "Festival Peh Cun di Sungai Cisadane saat ini tidak hanya diikuti masyarakat Tionghoa, tetapi juga masyarakat umum. Dampak positif yang paling besar dari kondisi tersebut adalah ....",
+          pilihan: [
+            "Menghilangkan identitas budaya Tionghoa",
+            "Mengurangi keberagaman budaya masyarakat",
+            "Meningkatkan persaingan antar kelompok budaya",
+            "Memperkuat integrasi sosial dalam masyarakat multikultural",
+            "Membatasi partisipasi masyarakat lokal",
+          ],
+          jawaban: 3,
+          penjelasan:
+            "Festival Peh Cun yang melibatkan banyak masyarakat menunjukkan bahwa akulturasi memperkuat integrasi sosial dalam masyarakat multikultural — berbagai kelompok berpartisipasi bersama tanpa memandang latar belakang.",
+        },
+        {
+          soal: "Bahasa Cina Benteng berkembang dari perpaduan bahasa Hokkian, Melayu, Betawi, dan Sunda. Fenomena tersebut menunjukkan bahwa ....",
+          pilihan: [
+            "Akulturasi hanya terjadi dalam bidang seni",
+            "Bahasa lokal selalu menghilangkan bahasa pendatang",
+            "Interaksi sosial dapat melahirkan identitas budaya baru",
+            "Bahasa Hokkian tetap digunakan tanpa perubahan",
+            "Akulturasi hanya terjadi di Tangerang",
+          ],
+          jawaban: 2,
+          penjelasan:
+            "Bahasa Cina Benteng terbentuk dari interaksi sosial yang menghasilkan perpaduan bahasa Tionghoa dan bahasa lokal — bukti nyata bahwa akulturasi dapat melahirkan identitas budaya baru yang unik.",
+        },
+        {
+          soal: "Jika seluruh bangunan bersejarah Tionghoa di Lasem diganti dengan bangunan modern, maka dampak yang paling mungkin terjadi adalah ....",
+          pilihan: [
+            "Meningkatnya pemahaman masyarakat terhadap sejarah lokal",
+            "Hilangnya sebagian sumber belajar sejarah dan budaya",
+            "Bertambahnya jumlah tradisi budaya yang dilestarikan",
+            "Meningkatnya keragaman arsitektur tradisional",
+            "Semakin kuatnya identitas sejarah masyarakat",
+          ],
+          jawaban: 1,
+          penjelasan:
+            "Penggantian bangunan bersejarah akan menghilangkan sumber penting pembelajaran sejarah dan identitas budaya masyarakat — bangunan tua adalah arsip hidup yang tidak bisa digantikan oleh bangunan modern.",
+        },
+        {
+          soal: "Batik Tiga Negeri disebut sebagai simbol akulturasi budaya karena ....",
+          gambar: "assets/soal/batik-lasem.jpg",
+          pilihan: [
+            "Dibuat hanya oleh masyarakat Tionghoa",
+            "Menggunakan motif dari satu daerah saja",
+            "Diproduksi secara modern menggunakan mesin",
+            "Menggabungkan unsur budaya dari beberapa daerah dan etnis",
+            "Hanya digunakan dalam upacara keagamaan",
+          ],
+          jawaban: 3,
+          penjelasan:
+            "Batik Tiga Negeri disebut simbol akulturasi karena menggabungkan teknik dan motif dari berbagai budaya dan daerah — Lasem (merah), Pekalongan (biru/coklat), dan Solo (sogan) dalam satu kain.",
+        },
+        {
+          soal: "Ketika mengunjungi Tangerang, seorang wisatawan ingin mempelajari warisan budaya masyarakat Cina Benteng. Tempat yang paling tepat untuk dikunjungi adalah ....",
+          pilihan: [
+            "Kawasan Pecinan dan Klenteng Boen Tek Bio",
+            "Gunung Bromo",
+            "Candi Borobudur",
+            "Benteng Rotterdam",
+            "Danau Toba",
+          ],
+          jawaban: 0,
+          penjelasan:
+            "Kawasan Pecinan dan Klenteng Boen Tek Bio merupakan pusat utama perkembangan budaya Cina Benteng di Tangerang — di sinilah tradisi, arsitektur, dan kehidupan sosial komunitas Tionghoa Benteng masih terjaga.",
+        },
+        {
+          soal: "Seorang siswa berpendapat bahwa budaya asing akan selalu menghilangkan budaya lokal. Berdasarkan contoh akulturasi di Semarang, Lasem, dan Tangerang, pendapat tersebut ....",
+          pilihan: [
+            "Benar karena budaya lokal tidak berkembang",
+            "Benar karena budaya Tionghoa lebih dominan",
+            "Kurang tepat karena akulturasi justru menghasilkan perpaduan budaya baru",
+            "Tepat karena budaya lokal sudah hilang sepenuhnya",
+            "Tepat karena masyarakat menolak perubahan budaya",
+          ],
+          jawaban: 2,
+          penjelasan:
+            "Pendapat tersebut kurang tepat karena di Semarang, Lasem, dan Tangerang terbukti budaya asing justru berbaur dengan budaya lokal dan menghasilkan bentuk baru yang unik melalui akulturasi — bukan menggantikan.",
+        },
+        {
+          soal: "Sekolah akan mengadakan proyek pelestarian budaya. Program yang paling sesuai dengan semangat akulturasi budaya adalah ....",
+          pilihan: [
+            "Mengajarkan satu budaya saja kepada siswa",
+            "Menghapus unsur budaya asing dari pembelajaran",
+            "Mengadakan lomba hafalan nama-nama klenteng",
+            "Membatasi peserta hanya dari satu kelompok budaya",
+            "Membuat pameran yang menampilkan perpaduan budaya Tionghoa dan budaya lokal beserta sejarah perkembangannya",
+          ],
+          jawaban: 4,
+          penjelasan:
+            "Pameran budaya yang menampilkan perpaduan unsur Tionghoa dan lokal mencerminkan semangat pelestarian sekaligus pemahaman akulturasi budaya — inklusif, edukatif, dan menghargai keberagaman.",
+        },
+      ];
+
+      // ── STATE ──
+      let soalSekarang = 0;
+      let skor = 0;
+      let sudahJawab = false;
+      let dataSiswa = {};
+      let hasilJawaban = [];
+      let waktuMulai = null;
+      const huruf = ["A", "B", "C", "D", "E"];
+
+      // ── MULAI KUIS (dari form identitas) ──
+      function mulaiKuis() {
+        const nama = document.getElementById("input-nama").value.trim();
+        const kelas = document.getElementById("input-kelas").value.trim();
+        const sekolah = document.getElementById("input-sekolah").value.trim();
+        const errEl = document.getElementById("identitas-error");
+
+        if (!nama || !kelas) {
+          errEl.style.display = "block";
+          return;
+        }
+        errEl.style.display = "none";
+
+        dataSiswa = { nama, kelas, sekolah };
+        soalSekarang = 0;
+        skor = 0;
+        hasilJawaban = [];
+        waktuMulai = Date.now();
+
+        document.getElementById("kuis-identitas").style.display = "none";
+        document.getElementById("kuis-utama").style.display = "block";
+        document.getElementById("kuis-nama-siswa").textContent =
+          nama + " · " + kelas;
+        tampilSoal();
+      }
+
+      // ── TAMPIL SOAL ──
+      function tampilSoal() {
+        const s = soalData[soalSekarang];
+        const nomor = soalSekarang + 1;
+        const persen = Math.round((nomor / soalData.length) * 100);
+
+        document.getElementById("kuis-judul-soal").textContent =
+          `Soal ${nomor} dari ${soalData.length}`;
+        document.getElementById("kuis-persen").textContent = persen + "%";
+        document.getElementById("kuis-bar").style.width = persen + "%";
+
+        // Soal teks (newline → <br>)
+        document.getElementById("kuis-pertanyaan").innerHTML = s.soal.replace(
+          /\n/g,
+          "<br>",
+        );
+
+        // Gambar jika ada
+        const gambarWrap = document.getElementById("kuis-gambar-wrap");
+        const gambarEl = document.getElementById("kuis-gambar");
+        if (s.gambar) {
+          gambarEl.src = s.gambar;
+          gambarWrap.style.display = "block";
+        } else {
+          gambarWrap.style.display = "none";
+        }
+
+        // Pilihan jawaban
+        const ul = document.getElementById("kuis-pilihan");
+        ul.innerHTML = "";
+        s.pilihan.forEach((p, i) => {
+          const li = document.createElement("li");
+          const btn = document.createElement("button");
+          btn.className = "pilihan-btn";
+          btn.innerHTML = `<span class="pilihan-huruf">${huruf[i]}</span> ${p}`;
+          btn.onclick = () => pilih(i, btn);
+          li.appendChild(btn);
+          ul.appendChild(li);
+        });
+
+        // Reset feedback & tombol
+        const feedback = document.getElementById("kuis-feedback");
+        feedback.style.display = "none";
+        feedback.className = "kuis-feedback";
+        document.getElementById("btn-lanjut").style.display = "none";
+        sudahJawab = false;
+      }
+
+      // ── PILIH JAWABAN ──
+      function pilih(idx, btn) {
+        if (sudahJawab) return;
+        sudahJawab = true;
+
+        const s = soalData[soalSekarang];
+        const semua = document.querySelectorAll(".pilihan-btn");
+        const benar = idx === s.jawaban;
+
+        semua.forEach((b, i) => {
+          b.disabled = true;
+          if (i === s.jawaban) b.classList.add("benar");
+          else if (b === btn && !benar) b.classList.add("salah");
+        });
+
+        if (benar) skor++;
+
+        // Simpan hasil per soal
+        hasilJawaban.push({
+          nomor: soalSekarang + 1,
+          benar: benar,
+          pilihan: huruf[idx],
+          kunci: huruf[s.jawaban],
+        });
+
+        // Tampilkan feedback penjelasan
+        const feedback = document.getElementById("kuis-feedback");
+        feedback.className = "kuis-feedback " + (benar ? "benar" : "salah");
+        feedback.innerHTML =
+          (benar
+            ? "✅ <strong>Benar!</strong> "
+            : "❌ <strong>Kurang tepat.</strong> ") + s.penjelasan;
+        feedback.style.display = "block";
+
+        // Tombol lanjut
+        const btnLanjut = document.getElementById("btn-lanjut");
+        btnLanjut.style.display = "block";
+        btnLanjut.textContent =
+          soalSekarang === soalData.length - 1
+            ? "Lihat Hasil 🎉"
+            : "Selanjutnya →";
+      }
+
+      // ── SOAL BERIKUTNYA ──
+      function soalBerikut() {
+        soalSekarang++;
+        if (soalSekarang >= soalData.length) {
+          tampilHasil();
+        } else {
+          tampilSoal();
+        }
+      }
+
+      // ── TAMPIL HASIL ──
+      function tampilHasil() {
+        document.getElementById("kuis-utama").style.display = "none";
+        const hasilDiv = document.getElementById("hasil-kuis");
+        hasilDiv.style.display = "block";
+
+        const nilai = Math.round((skor / soalData.length) * 100);
+        const durasi = Math.round((Date.now() - waktuMulai) / 1000);
+
+        document.getElementById("skor-tampil").textContent = `${nilai} / 100`;
+
+        // Bintang
+        let bintang = 1;
+        if (nilai >= 90) bintang = 5;
+        else if (nilai >= 75) bintang = 4;
+        else if (nilai >= 60) bintang = 3;
+        else if (nilai >= 40) bintang = 2;
+        let bintangHTML = "";
+        for (let i = 1; i <= 5; i++) bintangHTML += i <= bintang ? "⭐" : "☆";
+        document.getElementById("bintang-tampil").innerHTML = bintangHTML;
+
+        // Pesan
+        let pesan = "";
+        if (nilai >= 90)
+          pesan =
+            "Luar biasa! Kamu benar-benar menguasai materi akulturasi budaya ini!";
+        else if (nilai >= 75)
+          pesan =
+            "Bagus sekali! Pemahamanmu sudah sangat baik tentang sejarah Tionghoa di Nusantara.";
+        else if (nilai >= 60)
+          pesan = "Cukup baik! Teruslah belajar untuk memperdalami materinya.";
+        else if (nilai >= 40)
+          pesan =
+            "Lumayan! Coba pelajari kembali materi tentang jalur perdagangan dan akulturasi budaya.";
+        else pesan = "Jangan menyerah! Baca kembali materi dan coba lagi ya!";
+        document.getElementById("pesan-tampil").textContent = pesan;
+
+        // Review jawaban
+        const reviewDiv = document.getElementById("hasil-review");
+        let reviewHTML = `<div class="review-judul">📝 Review Jawaban</div>`;
+        hasilJawaban.forEach((j) => {
+          reviewHTML += `
+      <div class="review-item ${j.benar ? "benar" : "salah"}">
+        <span class="review-nomor">${j.nomor}.</span>
+        <span>${j.benar ? "✅ Benar" : `❌ Salah (kamu: ${j.pilihan}, kunci: ${j.kunci})`}</span>
+      </div>`;
+        });
+        reviewDiv.innerHTML = reviewHTML;
+
+        // Kirim ke Google Sheets
+        kirimKeSheets(nilai, durasi);
+
+        // Refresh leaderboard setelah 2 detik
+        setTimeout(muatLeaderboard, 2000);
+      }
+
+      // ── KIRIM KE GOOGLE SHEETS ──
+      function kirimKeSheets(nilai, durasi) {
+        const statusEl = document.getElementById("simpan-status");
+        statusEl.style.display = "inline-flex";
+        statusEl.className = "simpan-status";
+        statusEl.innerHTML = "⏳ Menyimpan hasil ke database...";
+
+        const payload = {
+          nama: dataSiswa.nama,
+          kelas: dataSiswa.kelas,
+          sekolah: dataSiswa.sekolah || "-",
+          skor: skor,
+          nilai: nilai,
+          jawaban: hasilJawaban.map((j) => (j.benar ? "✓ Benar" : "✗ Salah")),
+          durasi: durasi,
+        };
+
+        fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        })
+          .then(() => {
+            statusEl.className = "simpan-status sukses";
+            statusEl.innerHTML = "✅ Hasil berhasil disimpan!";
+          })
+          .catch(() => {
+            statusEl.className = "simpan-status gagal";
+            statusEl.innerHTML = "⚠️ Gagal menyimpan. Cek koneksi internet.";
+          });
+      }
+
+      // ── ULANGI KUIS ──
+      function ulangiKuis() {
+        soalSekarang = 0;
+        skor = 0;
+        hasilJawaban = [];
+        waktuMulai = null;
+
+        document.getElementById("hasil-kuis").style.display = "none";
+        document.getElementById("kuis-identitas").style.display = "block";
+
+        // Reset form
+        document.getElementById("input-nama").value = "";
+        document.getElementById("input-kelas").value = "";
+        document.getElementById("input-sekolah").value = "";
+      }
+
+      // ── MUAT LEADERBOARD ──
+      function muatLeaderboard() {
+        const body = document.getElementById("lb-body");
+        body.innerHTML = '<div class="lb-loading">Memuat data...</div>';
+
+        fetch(APPS_SCRIPT_URL + "?action=leaderboard")
+          .then((r) => r.json())
+          .then((res) => {
+            if (!res.data || res.data.length === 0) {
+              body.innerHTML =
+                '<div class="lb-kosong">Belum ada data. Jadilah yang pertama! 🏆</div>';
+              return;
+            }
+            let html = "";
+            res.data.forEach((item, i) => {
+              const medal =
+                i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : i + 1;
+              html += `
+          <div class="lb-item">
+            <div class="lb-rank">${medal}</div>
+            <div class="lb-info-siswa">
+              <div class="lb-nama">${item.nama}</div>
+              <div class="lb-kelas">${item.kelas}${item.sekolah && item.sekolah !== "-" ? " · " + item.sekolah : ""}</div>
+            </div>
+            <div class="lb-nilai">${item.nilai}</div>
+          </div>`;
+            });
+            body.innerHTML = html;
+          })
+          .catch(() => {
+            body.innerHTML =
+              '<div class="lb-kosong">Tidak dapat memuat data leaderboard.</div>';
+          });
+      }
+
+      // Muat leaderboard saat halaman siap
+      document.addEventListener("DOMContentLoaded", muatLeaderboard);
+    </script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+      // ================================================================
+      // PETA AKULTURASI — sidebar + peta, klik marker → sidebar detail
+      // ================================================================
+
+      // ── DATA LENGKAP SEMUA TITIK ──
+      const semuaData = {
+        // ════ KEDATANGAN ════
+        semarang_ked: {
+          tipe: "kedatangan",
+          label: "Kedatangan · Semarang",
+          judul: "Semarang",
+          sub: "Pesisir Utara Jawa · Sejak Abad ke-15",
+          lat: -6.99,
+          lng: 110.42,
+          isi: `<p>Komunitas Tionghoa di Semarang mulai berkembang pesat sejak abad ke-15 hingga abad ke-17 seiring ramainya perdagangan di pesisir utara Jawa. Sebagian besar pendatang berasal dari suku <strong>Hokkien (Fujian Selatan)</strong> yang terkenal sebagai pelaut dan pedagang ulung.</p>
+    <p>Mereka berlayar dari pelabuhan-pelabuhan di Fujian melalui laut Tiongkok Selatan dengan memanfaatkan <strong>angin muson</strong>. Masyarakat Tionghoa awal — terutama rombongan Laksamana Cheng Ho — melabuhkan kapalnya di kawasan <strong>Pelabuhan Bergota di Simongan</strong> (kini menjadi TPU akibat sedimentasi).</p>
+    <p>Tujuan utama kedatangan mereka adalah berdagang dalam komoditas rempah-rempah, beras, gula, kain, dan keramik. Sebagian kemudian menetap dan membentuk <strong>kawasan Pecinan Semarang</strong> yang berkembang menjadi pusat perdagangan penting di Jawa Tengah.</p>`,
+          tags: [
+            "Hokkien (Fujian Selatan)",
+            "Pelabuhan Bergota",
+            "Kawasan Pecinan",
+            "Abad ke-15–17",
+          ],
+        },
+        lasem_ked: {
+          tipe: "kedatangan",
+          label: "Kedatangan · Lasem",
+          judul: "Lasem",
+          sub: "Tiongkok Kecil di Jawa · Sejak Abad ke-14",
+          lat: -6.7,
+          lng: 111.45,
+          isi: `<p>Lasem dikenal sebagai salah satu <strong>pintu masuk tertua orang Tionghoa ke Pulau Jawa</strong>. Komunitas Tionghoa telah hadir di Lasem setidaknya sejak awal abad ke-14. Sebagian besar pendatang berasal dari <strong>Fujian Selatan (Hokkien)</strong>, meskipun kemudian disusul kelompok Hakka, Teochiu, dan Kwang Fu.</p>
+    <p>Mereka berlayar menggunakan <strong>kapal jung dari Fujian-Guangdong</strong> melalui Laut Cina dan mendarat di pesisir Desa Galangan ke Sungai Lasem, kemudian bermukim di tepian sungai Babangan atau di daerah Pareng/Soditan.</p>
+    <p>Pada abad ke-18–19 M, Lasem menjadi <strong>Pelabuhan Candu terbesar di Pulau Jawa</strong>. Interaksi yang intens dengan masyarakat Jawa melahirkan komunitas peranakan dan akulturasi budaya yang sangat kuat, menjadikan Lasem dijuluki <strong>"Tiongkok Kecil di Jawa"</strong>.</p>`,
+          tags: [
+            "Hokkien, Hakka, Teochiu",
+            "Kapal Jung Fujian",
+            "Pelabuhan Candu Terbesar",
+            "Abad ke-14",
+          ],
+        },
+        tangerang_ked: {
+          tipe: "kedatangan",
+          label: "Kedatangan · Tangerang",
+          judul: "Tangerang",
+          sub: "Cina Benteng · Sejak Tahun 1407 M",
+          lat: -6.18,
+          lng: 106.63,
+          isi: `<p>Cikal bakal komunitas Tionghoa di Tangerang diperkirakan telah ada sejak sekitar <strong>tahun 1407 M</strong>. Menurut tradisi lokal, rombongan perantau Tionghoa yang dipimpin oleh tokoh bernama <strong>Tjen Tjie Lung</strong> datang melalui jalur laut dan menetap di wilayah sekitar <strong>Sungai Cisadane</strong>.</p>
+    <p>Sebagian besar pendatang berasal dari wilayah pesisir Tiongkok Selatan, terutama <strong>Fujian (Hokkien)</strong>. Mereka masuk melalui pelabuhan-pelabuhan di sekitar muara Cisadane dan pesisir Teluk Jakarta, kemudian menjalin hubungan ekonomi dengan <strong>Kesultanan Banten</strong>.</p>
+    <p>Seiring waktu, mereka berbaur dengan masyarakat Sunda dan Betawi sehingga lahirlah budaya khas <strong>Cina Benteng</strong> — salah satu komunitas peranakan paling unik di Indonesia.</p>`,
+          tags: [
+            "Tjen Tjie Lung",
+            "Sungai Cisadane",
+            "Kesultanan Banten",
+            "Cina Benteng",
+          ],
+        },
+
+        // ════ KLENTENG ════
+        sampookong: {
+          tipe: "klenteng",
+          label: "Klenteng · Semarang",
+          judul: "Sam Poo Kong",
+          sub: "Semarang · Abad ke-15 · Simongan",
+          lat: -6.9948,
+          lng: 110.3891,
+          isi: `<p>Klenteng Sam Poo Kong merupakan <strong>klenteng Tionghoa tertua di Semarang</strong> dan menjadi ikon akulturasi budaya Tionghoa-Jawa. Klenteng ini dikaitkan dengan pelayaran <strong>Laksamana Zheng He (Cheng Ho)</strong> yang singgah di Semarang pada awal abad ke-15.</p>
+    <p>Awalnya tempat ini berupa <strong>gua batu</strong> yang digunakan sebagai tempat beristirahat dan berdoa oleh rombongan Zheng He, sebelum kemudian berkembang menjadi kompleks klenteng besar yang kita kenal hari ini.</p>
+    <p>Sam Poo Kong menjadi simbol persahabatan Tionghoa-Jawa dan destinasi wisata religi terpenting di Semarang, dikunjungi berbagai kalangan lintas etnis dan agama.</p>`,
+          tags: [
+            "Tertua di Semarang",
+            "Laksamana Zheng He",
+            "Simbol Akulturasi Tionghoa-Jawa",
+          ],
+        },
+        taykaksie: {
+          tipe: "klenteng",
+          label: "Klenteng · Semarang",
+          judul: "Tay Kak Sie",
+          sub: "Semarang · 1746–1771 · Pecinan Gang Lombok",
+          lat: -6.9843,
+          lng: 110.4113,
+          isi: `<p>Klenteng Tay Kak Sie dibangun sekitar tahun <strong>1746–1771</strong> oleh komunitas pedagang Tionghoa Hokkien di kawasan Gang Lombok. Awalnya dikenal sebagai <strong>Kwan Im Ting</strong>, tempat pemujaan Dewi Kwan Im.</p>
+    <p>Nama Tay Kak Sie bermakna <strong>"Kuil Kesadaran Agung"</strong> — tertulis pada papan-nama di pintu masuk dengan catatan tahun pemerintahan Kaisar Dao Guang dari Dinasti Qing.</p>
+    <p>Klenteng ini menjadi pusat <strong>Cap Gomeh tahunan</strong> dan terkenal dengan ukiran kayu klasik serta ornamen naganya yang menawan.</p>`,
+          tags: [
+            "Kuil Kesadaran Agung",
+            "Kwan Im Ting",
+            "Cap Gomeh",
+            "Pecinan Gang Lombok",
+          ],
+        },
+        siuhokbio: {
+          tipe: "klenteng",
+          label: "Klenteng · Semarang",
+          judul: "Siu Hok Bio",
+          sub: "Semarang · 1700–1753 · Pecinan",
+          lat: -6.9854,
+          lng: 110.4128,
+          isi: `<p>Klenteng Siu Hok Bio diperkirakan berdiri sejak <strong>tahun 1700–1753</strong>. Dibangun oleh komunitas perantau Tionghoa Hokkien di kawasan Pecinan Semarang.</p>
+    <p>Nama <strong>"Siu Hok Bio" (小福廟)</strong> berarti <em>"Klenteng Kebajikan Kecil"</em>. Meskipun tidak sebesar Sam Poo Kong, klenteng ini memiliki nilai sejarah sangat penting.</p>
+    <p>Keistimewaannya: Siu Hok Bio termasuk salah satu klenteng yang <strong>tetap aktif digunakan secara terbuka bahkan pada masa Orde Baru</strong> ketika ekspresi budaya Tionghoa mengalami berbagai pembatasan.</p>`,
+          tags: [
+            "Klenteng Kebajikan Kecil",
+            "Tetap Aktif Era Orba",
+            "Hokkien Pecinan",
+          ],
+        },
+        wiehwiekiong: {
+          tipe: "klenteng",
+          label: "Klenteng · Semarang",
+          judul: "Wie Hwie Kiong",
+          sub: "Semarang · ±1814",
+          lat: -6.9703,
+          lng: 110.4185,
+          isi: `<p>Klenteng Wie Hwie Kiong diperkirakan berdiri sekitar <strong>tahun 1814</strong>. Awalnya bersifat privat dan hanya digunakan oleh <strong>keluarga besar Marga Tan</strong> sebagai tempat penghormatan leluhur.</p>
+    <p>Didirikan oleh para pemuka dan saudagar Tionghoa dari Marga Tan, salah satu keluarga Tionghoa berpengaruh di Semarang. Beberapa sumber menyebut nama <strong>Tan Tiang Tjhing</strong> sebagai tokoh utama pendirinya.</p>
+    <p>Baru setelah <strong>tahun 1985</strong>, klenteng ini dibuka untuk masyarakat umum dan kini menjadi bagian dari warisan budaya Pecinan Semarang.</p>`,
+          tags: ["Marga Tan", "Klenteng Privat→Publik", "Dibuka Umum 1985"],
+        },
+        cuankiong: {
+          tipe: "klenteng",
+          label: "Klenteng · Lasem",
+          judul: "Cu An Kiong",
+          sub: "Lasem · ±1450",
+          lat: -6.696,
+          lng: 111.4534,
+          isi: `<p>Cu An Kiong merupakan salah satu <strong>klenteng tertua di Pulau Jawa</strong>, diperkirakan berdiri sekitar tahun 1450. Dibangun oleh generasi awal pendatang Tionghoa dari Fujian yang datang bersama rombongan pelayaran Cheng Ho, dipimpin oleh <strong>Bi Nang Oen</strong>.</p>
+    <p>Klenteng ini didedikasikan untuk <strong>Dewi Laut Ma Zu (Mak Co)</strong>, pelindung para pelaut dan pedagang.</p>
+    <p>Arsitektur klasiknya bergaya <strong>Fujian</strong>, menggunakan bahan kayu jati yang dominan, serta memiliki ornamen dan lukisan dinding yang menceritakan legenda Tiongkok kuno.</p>`,
+          tags: [
+            "Tertua di Pulau Jawa",
+            "Dewi Laut Ma Zu",
+            "Arsitektur Fujian",
+            "Bi Nang Oen",
+          ],
+        },
+        gieyongbio: {
+          tipe: "klenteng",
+          label: "Klenteng · Lasem",
+          judul: "Gie Yong Bio",
+          sub: "Lasem · 1780 · Desa Babagan",
+          lat: -6.702,
+          lng: 111.456,
+          isi: `<p>Klenteng Gie Yong Bio didirikan pada <strong>tahun 1780</strong> di Desa Babagan, Lasem. Dibangun untuk mengenang perjuangan tiga tokoh yang melawan VOC dalam <strong>Perang Kuning / Geger Pecinan Lasem</strong>: Tan Kee Wie, Oei Ing Kiat, dan <strong>Raden Panji Margono</strong>.</p>
+    <p>Keunikannya: adanya penghormatan kepada <strong>tokoh pribumi Jawa, Raden Panji Margono</strong>, bersama dua pejuang Tionghoa. Ini menjadikan Gie Yong Bio sebagai salah satu <strong>simbol akulturasi Tionghoa-Jawa paling kuat di Indonesia</strong>.</p>`,
+          tags: [
+            "Simbol Akulturasi Tionghoa-Jawa",
+            "Pejuang vs VOC",
+            "Raden Panji Margono",
+            "1780",
+          ],
+        },
+        poanbio: {
+          tipe: "klenteng",
+          label: "Klenteng · Lasem",
+          judul: "Poo An Bio",
+          sub: "Lasem · Abad ke-18 · Karangturi",
+          lat: -6.701,
+          lng: 111.459,
+          isi: `<p>Klenteng Poo An Bio berkembang pada masa kejayaan perdagangan Lasem sekitar <strong>abad ke-18</strong>. Nama <strong>"Poo An Bio"</strong> berarti <em>"Kuil Penjaga Kedamaian"</em>.</p>
+    <p>Dibangun secara <strong>gotong royong</strong> oleh komunitas Tionghoa Hokkien di Karangturi, Lasem. Didedikasikan untuk <strong>Dewa Bumi (Hok Tek Cing Sin)</strong>.</p>
+    <p>Menjadi pusat aktivitas sosial masyarakat Tionghoa Lasem dan contoh nyata bagaimana budaya Tionghoa dan budaya lokal <strong>hidup berdampingan selama berabad-abad</strong>.</p>`,
+          tags: [
+            "Kuil Penjaga Kedamaian",
+            "Dewa Bumi",
+            "Gotong Royong",
+            "Karangturi Lasem",
+          ],
+        },
+        boentekbio: {
+          tipe: "klenteng",
+          label: "Klenteng · Tangerang",
+          judul: "Boen Tek Bio",
+          sub: "Tangerang · 1684 · Petak Sembilan",
+          lat: -6.177,
+          lng: 106.6375,
+          isi: `<p>Boen Tek Bio merupakan <strong>klenteng tertua di Tangerang</strong>, didirikan sekitar tahun <strong>1684</strong> secara gotong royong oleh kongsi-kongsi dagang Tionghoa di kawasan Petak Sembilan dekat Sungai Cisadane.</p>
+    <p>Nama <strong>Boen Tek Bio (文德廟)</strong> berarti <em>"Kebijaksanaan dan Kebajikan"</em>. Sejak awal menjadi tempat pemujaan berbagai dewa dalam tradisi <strong>Tridharma</strong> — Taoisme, Buddha, dan Konghucu.</p>
+    <p>Klenteng ini adalah <strong>jantung kehidupan sosial-keagamaan komunitas Cina Benteng</strong> dan penyelenggara utama Festival Peh Cun di Sungai Cisadane.</p>`,
+          tags: [
+            "Tertua di Tangerang",
+            "Kebijaksanaan dan Kebajikan",
+            "Tridharma",
+            "Festival Peh Cun",
+          ],
+        },
+        boensanbio: {
+          tipe: "klenteng",
+          label: "Klenteng · Tangerang",
+          judul: "Boen San Bio",
+          sub: "Tangerang · 1689",
+          lat: -6.179,
+          lng: 106.6391,
+          isi: `<p>Klenteng Boen San Bio dibangun pada <strong>tahun 1689</strong>, hanya sekitar 5 tahun setelah Boen Tek Bio. Dikenal sebagai <strong>klenteng tertua kedua di Tangerang</strong>. Nama bermakna <em>"Kuil Gunung Kebajikan"</em>.</p>
+    <p>Didirikan oleh pedagang Tionghoa bernama <strong>Lim Tau Koen</strong> yang membawa arca Hok Tek Tjeng Sin (Dewa Bumi) dari Banten. Awalnya bangunan sangat sederhana: dinding anyaman bambu, atap daun rumbia.</p>
+    <p>Terkenal sebagai salah satu <strong>pusat penyelenggaraan tradisi Peh Cun (Pecun)</strong> di Tangerang sejak awal abad ke-20.</p>`,
+          tags: [
+            "Kuil Gunung Kebajikan",
+            "Lim Tau Koen",
+            "Peh Cun Cisadane",
+            "Klenteng Tertua Kedua",
+          ],
+        },
+        boenhaybio: {
+          tipe: "klenteng",
+          label: "Klenteng · Tangerang",
+          judul: "Boen Hay Bio",
+          sub: "Tangerang · 1694 · Cisadane",
+          lat: -6.181,
+          lng: 106.636,
+          isi: `<p>Klenteng Boen Hay Bio dibangun pada <strong>tahun 1694</strong> oleh komunitas perantau Tionghoa Cina Benteng di sepanjang kawasan Sungai Cisadane.</p>
+    <p>Nama bermakna <strong>"Klenteng Kebajikan Seluas Samudera"</strong>. Umat memuja <strong>Kongco Kwan Seng Tee Koen</strong> — tokoh legendaris Tiongkok simbol kesetiaan, kejujuran, keberanian, dan keadilan.</p>
+    <p>Dibangun sebagai pusat ibadah dan tempat berkumpul masyarakat Tionghoa yang datang melalui jalur perdagangan maritim dari Tiongkok Selatan.</p>`,
+          tags: [
+            "Kebajikan Seluas Samudera",
+            "Kongco Kwan Seng",
+            "Cisadane",
+            "1694",
+          ],
+        },
+        tjosoekong: {
+          tipe: "klenteng",
+          label: "Klenteng · Tangerang",
+          judul: "Tjo Soe Kong",
+          sub: "Tangerang · ±1792 · Tanjung Kait",
+          lat: -5.9994,
+          lng: 106.5352,
+          isi: `<p>Klenteng Tjo Soe Kong diperkirakan berdiri sejak <strong>akhir abad ke-18, sekitar 1792</strong>. Berbeda dengan klenteng lain yang berkembang di kawasan kota, Tjo Soe Kong tumbuh di <strong>lingkungan pesisir</strong>.</p>
+    <p>Nama berasal dari tokoh <strong>Tjo Soe Kong (曹雪公)</strong> — seorang tabib, pemuka spiritual sekaligus tokoh bijaksana dari Tiongkok yang datang ke pesisir Tangerang.</p>
+    <p>Para <strong>nelayan Tanjung Kait</strong> sejak dahulu datang memohon keselamatan, hasil tangkapan yang baik, dan syukuran laut — tradisi yang masih berlanjut hingga kini.</p>`,
+          tags: [
+            "Klenteng Pesisir",
+            "Tjo Soe Kong",
+            "Nelayan Tanjung Kait",
+            "±1792",
+          ],
+        },
+
+        // ════ HASIL AKULTURASI — SEMARANG ════
+        lumpia: {
+          tipe: "akulturasi",
+          label: "Kuliner · Semarang",
+          judul: "Lumpia Semarang",
+          sub: "Semarang · Abad ke-19 · Kuliner",
+          lat: -6.9784,
+          lng: 110.4172,
+          isi: `<p>Lumpia Semarang lahir pada abad ke-19 dari pernikahan seorang perantau Tionghoa bernama <strong>Tjoa Thay Joe</strong> dengan perempuan Jawa bernama <strong>Wasih</strong>. Mereka menggabungkan teknik membuat lumpia dari Tiongkok dengan bahan lokal Jawa seperti rebung.</p>
+    <p>Perpaduan ini melahirkan kuliner ikonik yang kini dikenal di seluruh Indonesia. Lumpia Semarang menjadi contoh sempurna bagaimana <strong>akulturasi kuliner</strong> dapat menghasilkan identitas rasa yang baru dan unik.</p>`,
+          tags: [
+            "Tjoa Thay Joe & Wasih",
+            "Teknik Tionghoa + Bahan Jawa",
+            "Rebung & Udang",
+            "Ikon Kuliner Semarang",
+          ],
+        },
+        dugderan: {
+          tipe: "akulturasi",
+          label: "Tradisi · Semarang",
+          judul: "Tradisi Dugderan",
+          sub: "Semarang · Sejak ~1881 · Tradisi",
+          lat: -6.9944,
+          lng: 110.4203,
+          isi: `<p>Tradisi Dugderan muncul sekitar tahun <strong>1881</strong> sebagai perayaan menyambut bulan Ramadhan. Salah satu maskot terkenal adalah <strong>Warak Ngendog</strong> — hewan mitologis dengan kepala naga (Tionghoa), badan buraq (Arab-Islam), dan berkaki kambing (Jawa).</p>
+    <p>Warak Ngendog menjadi simbol persatuan tiga unsur budaya yang hidup berdampingan di Semarang: <strong>Tionghoa, Arab, dan Jawa</strong> — satu-satunya maskot seperti ini di dunia.</p>`,
+          tags: [
+            "Warak Ngendog",
+            "Naga (Tionghoa) + Buraq (Arab) + Kambing (Jawa)",
+            "Sejak 1881",
+            "Menyambut Ramadhan",
+          ],
+        },
+        mochi: {
+          tipe: "akulturasi",
+          label: "Kuliner · Semarang",
+          judul: "Kue Mochi Semarang",
+          sub: "Semarang · Sejak 1980-an · Kuliner",
+          lat: -6.9831,
+          lng: 110.4141,
+          isi: `<p>Berakar dari kue beras ketan Jepang dan mochi tradisional Jawa Barat, masyarakat Tionghoa di Semarang mengadaptasinya menjadi hidangan spesial yang sering disajikan saat <strong>perayaan Tahun Baru Imlek</strong>.</p>
+    <p>Ciri khas mochi Semarang: tidak hanya dibalur tepung, tetapi juga <strong>ditaburi biji wijen</strong>. Inovasi ini pertama kali dicetuskan pada pertengahan <strong>1980-an</strong> oleh nenek penjual di luar toko legendaris <strong>Moaci Gemini</strong>.</p>`,
+          tags: [
+            "Adaptasi Mochi",
+            "Taburan Wijen",
+            "Moaci Gemini",
+            "Inovasi 1980-an",
+          ],
+        },
+        gambang_smg: {
+          tipe: "akulturasi",
+          label: "Kesenian · Semarang",
+          judul: "Gambang Semarang",
+          sub: "Semarang · Sejak ~1930-an · Kesenian",
+          lat: -6.9895,
+          lng: 110.4052,
+          isi: `<p>Gambang Semarang lahir dari proses akulturasi budaya Jawa dan Tionghoa pada masa kolonial, mulai berkembang sekitar <strong>tahun 1930-an</strong>.</p>
+    <p>Bukti akulturasi terlihat dari: penggunaan <strong>alat musik Kongahyan (tehyan)</strong> — alat musik pentatonik Tionghoa, gamelan Jawa, irama lagu dan syair berbahasa Jawa, serta gerak tari dari Tari Tradisional Jawa.</p>
+    <p>Gambang Semarang merupakan perpaduan <strong>empat unsur seni sekaligus</strong>: musik, tari, nyanyian, dan lawak. Kesenian unik yang hanya ada di Semarang.</p>`,
+          tags: [
+            "Kongahyan (Tionghoa) + Gamelan Jawa",
+            "4 Unsur: Musik, Tari, Nyanyian, Lawak",
+            "Sejak 1930-an",
+          ],
+        },
+        chengho_festival: {
+          tipe: "akulturasi",
+          label: "Festival · Semarang",
+          judul: "Festival Cheng Ho",
+          sub: "Semarang · Tahunan · Festival",
+          lat: -6.9948,
+          lng: 110.3891,
+          isi: `<p>Festival Cheng Ho merupakan perayaan budaya untuk mengenang <strong>Laksamana Zheng He (Cheng Ho)</strong>, laksamana Muslim dari Dinasti Ming yang singgah di Semarang sekitar <strong>tahun 1405–1416</strong>.</p>
+    <p>Festival dipusatkan di kawasan <strong>Sam Poo Kong</strong> dengan rangkaian kegiatan: kirab budaya Cheng Ho, atraksi barongsai dan liong, pertunjukan Gambang Semarang, tari tradisional Tionghoa dan Jawa, pameran kuliner, serta <strong>doa bersama lintas agama</strong>.</p>`,
+          tags: [
+            "Laksamana Zheng He",
+            "Sam Poo Kong",
+            "Doa Lintas Agama",
+            "1405–1416",
+          ],
+        },
+
+        // ════ HASIL AKULTURASI — LASEM ════
+        batik_lasem: {
+          tipe: "akulturasi",
+          label: "Kerajinan · Lasem",
+          judul: "Batik Tiga Negeri",
+          sub: "Lasem · Akhir Abad ke-19 · Kerajinan",
+          lat: -6.6988,
+          lng: 111.456,
+          isi: `<p>Batik Tiga Negeri merupakan salah satu <strong>mahakarya batik pesisir</strong> yang berkembang pada akhir abad ke-19. Disebut "Tiga Negeri" karena pewarnaannya dilakukan di tiga daerah: <strong>Lasem (merah), Pekalongan (biru), dan Surakarta (coklat sogan)</strong>.</p>
+    <p>Lasem memegang peranan utama karena menghasilkan <strong>merah darah ayam (chicken blood red)</strong> — warna yang dipengaruhi tradisi Tionghoa yang menganggap merah sebagai lambang kemakmuran dan keberuntungan.</p>
+    <p>Motif batik ini memadukan <strong>naga, burung hong (phoenix), teratai, dan awan</strong> (Tionghoa) dengan motif <strong>parang, kawung, sidomukti, dan truntum</strong> (Jawa).</p>`,
+          tags: [
+            "Merah Darah Ayam",
+            "Naga & Kawung Jawa",
+            "3 Kota: Lasem-Pekalongan-Surakarta",
+            "Akhir Abad ke-19",
+          ],
+        },
+        cengbeng: {
+          tipe: "akulturasi",
+          label: "Tradisi · Lasem",
+          judul: "Ceng Beng (Qing Ming)",
+          sub: "Lasem · Tradisi Tahunan",
+          lat: -6.7005,
+          lng: 111.4572,
+          isi: `<p><strong>Ceng Beng (清明)</strong> adalah tradisi masyarakat Tionghoa untuk menghormati dan mengenang leluhur. Telah dilakukan di Tiongkok selama lebih dari <strong>2.000 tahun</strong> dan dibawa oleh perantau Tionghoa ke Nusantara.</p>
+    <p>Dilaksanakan sekitar awal <strong>bulan April</strong> setiap tahun. Kegiatannya: membersihkan makam, menyalakan dupa, berdoa, meletakkan sesaji dan bunga, serta berkumpul keluarga besar.</p>
+    <p>Di Lasem, <strong>makanan sesaji merupakan perpaduan kuliner Tionghoa dan Jawa</strong> — bukti nyata akulturasi hingga dalam tradisi keagamaan.</p>`,
+          tags: [
+            "Tradisi 2.000 Tahun",
+            "Sesaji Tionghoa-Jawa",
+            "Ziarah Makam April",
+            "Qing Ming",
+          ],
+        },
+        lontong_tuyuhan: {
+          tipe: "akulturasi",
+          label: "Kuliner · Lasem",
+          judul: "Lontong Tuyuhan",
+          sub: "Lasem · Awal Abad ke-20 · Kuliner",
+          lat: -6.906,
+          lng: 111.38,
+          isi: `<p>Lontong Tuyuhan adalah makanan tradisional dari <strong>Desa Tuyuhan, Kecamatan Pancur, Kabupaten Rembang</strong> — tidak jauh dari kawasan Lasem. Telah dikenal sejak <strong>awal abad ke-20</strong>.</p>
+    <p>Ciri khasnya: penggunaan <strong>ayam kampung</strong> dan <strong>kuah santan gurih</strong> dengan cita rasa ringan khas pesisir Jawa. Dahulu banyak dijual kepada pedagang, pelaut, dan musafir yang melintasi jalur pantura.</p>
+    <p>Meskipun bukan makanan langsung dari tradisi Tionghoa, Lontong Tuyuhan berkembang di wilayah yang sejak berabad-abad menjadi pusat permukiman Tionghoa.</p>`,
+          tags: [
+            "Desa Tuyuhan Rembang",
+            "Ayam Kampung + Kuah Santan",
+            "Kuliner Pantura",
+            "Awal Abad ke-20",
+          ],
+        },
+        yopia: {
+          tipe: "akulturasi",
+          label: "Kuliner · Lasem",
+          judul: "Kue Yopia",
+          sub: "Lasem · Kuliner Peranakan",
+          lat: -6.6992,
+          lng: 111.4555,
+          isi: `<p>Kue Yopia adalah kuliner khas Lasem yang merupakan hasil akulturasi budaya Tionghoa dan Jawa. Berasal dari <strong>bakpia atau tou luk pia</strong> — makanan tradisional Tionghoa dari Provinsi Fujian (Hokkian).</p>
+    <p>Di Lasem, resep tersebut kemudian <strong>disesuaikan dengan bahan baku dan selera masyarakat lokal</strong> hingga lahirlah Yopia. Berbeda dengan bakpia Yogyakarta yang lebih lembut, <strong>Yopia Lasem memiliki ciri khas tersendiri</strong> pada kulit dan proses pembakarannya.</p>`,
+          tags: [
+            "Adaptasi Bakpia Fujian",
+            "Khas Lasem",
+            "Berbeda dari Bakpia Yogyakarta",
+          ],
+        },
+        kopi_lelet: {
+          tipe: "akulturasi",
+          label: "Tradisi · Lasem",
+          judul: "Kopi Lelet (Nglelet)",
+          sub: "Lasem · Akhir Abad ke-19 · Tradisi",
+          lat: -6.7015,
+          lng: 111.4545,
+          isi: `<p>Kopi Lelet merupakan tradisi yang berkembang di Lasem dan Rembang sejak <strong>akhir abad ke-19</strong>, ketika kawasan Lasem menjadi tempat bertemunya berbagai kelompok etnis: Jawa, Tionghoa, Arab, dan Madura.</p>
+    <p>Kata <strong>"lelet"</strong> berasal dari bahasa Jawa yang berarti mengoles. Dalam tradisi ini, ampas kopi digunakan untuk <strong>menghias batang rokok</strong> dengan motif burung, bunga, daun, dan batik — kegiatan yang dikenal sebagai <strong>"Nglelet"</strong>.</p>
+    <p>Seiring waktu, Nglelet berkembang menjadi bentuk <strong>seni rakyat</strong> dengan beragam motif, mulai dari bunga, daun, hingga kaligrafi sederhana.</p>`,
+          tags: [
+            "Tradisi Nglelet",
+            "Ampas Kopi & Seni",
+            "Lasem Multietnis",
+            "Akhir Abad ke-19",
+          ],
+        },
+        rumah_merah: {
+          tipe: "akulturasi",
+          label: "Arsitektur · Lasem",
+          judul: "Rumah Merah Lasem",
+          sub: "Lasem · ±1860-an · Arsitektur",
+          lat: -6.7005,
+          lng: 111.4572,
+          isi: `<p>Rumah Merah Lasem adalah kompleks rumah bersejarah di kawasan <strong>Pecinan Karangturi, Lasem</strong>. Diperkirakan dibangun sekitar <strong>tahun 1860-an</strong> ketika komunitas Tionghoa berkembang sebagai kota pelabuhan.</p>
+    <p>Bangunan ini merupakan contoh arsitektur <strong>peranakan Tionghoa-Jawa-kolonial Belanda</strong> dalam satu harmoni yang khas. Pernah terbengkalai dan digunakan sebagai sarang burung walet sebelum dipugar.</p>
+    <p>Kini dikembangkan menjadi <strong>kawasan heritage, penginapan, pusat batik, dan wisata budaya</strong> — bukti penting keberadaan masyarakat Tionghoa peranakan di Lasem.</p>`,
+          tags: [
+            "Arsitektur Tionghoa-Jawa-Kolonial",
+            "Karangturi Lasem",
+            "±1860-an",
+            "Kawasan Heritage",
+          ],
+        },
+        masjid_lasem: {
+          tipe: "akulturasi",
+          label: "Arsitektur Religi · Lasem",
+          judul: "Masjid Jami' Lasem",
+          sub: "Lasem · ±1588 M · Arsitektur Religi",
+          lat: -6.7082,
+          lng: 111.4594,
+          isi: `<p>Masjid Jami' Lasem adalah salah satu <strong>masjid tertua di pesisir utara Jawa</strong>, berdiri sekitar <strong>tahun 1588 M</strong>. Dikaitkan dengan tokoh penyebar Islam seperti R.M. Tejakusuma I dan Sayyid Abdurrahman.</p>
+    <p>Karena berada dekat kawasan pecinan, dalam beberapa ornamen masjid terlihat perpaduan budaya Tionghoa — yakni <strong>keramik-keramik Cina berlafazkan tulisan Arab</strong> di dalam masjid.</p>
+    <p>Ini menjadi bukti nyata bahwa <strong>akulturasi tidak hanya terjadi dalam kuliner atau kesenian, tetapi juga dalam arsitektur religi</strong> — mempertemukan estetika Tionghoa dan nilai Islam dalam satu bangunan.</p>`,
+          tags: [
+            "±1588 M",
+            "Keramik Cina + Kaligrafi Arab",
+            "Akulturasi Arsitektur Religi",
+            "Pesisir Utara Jawa",
+          ],
+        },
+
+        // ════ HASIL AKULTURASI — TANGERANG ════
+        cokek: {
+          tipe: "akulturasi",
+          label: "Kesenian · Tangerang",
+          judul: "Tari Cokek",
+          sub: "Tangerang · Abad ke-19 · Kesenian",
+          lat: -6.1789,
+          lng: 106.634,
+          isi: `<p>Tari Cokek berkembang sejak <strong>abad ke-19</strong> di kalangan masyarakat Cina Benteng. Lahir dari pergaulan dan pembauran masyarakat <strong>Tionghoa dengan Betawi dan Sunda</strong> di wilayah Tangerang.</p>
+    <p>Nama "Cokek" berasal dari sebutan bagi para <strong>penyanyi/penari perempuan</strong> yang menghibur tamu dalam pesta masyarakat Tionghoa peranakan. Tari Cokek hampir selalu diiringi oleh <strong>Gambang Kromong</strong>.</p>`,
+          tags: [
+            "Tionghoa-Betawi-Sunda",
+            "Abad ke-19",
+            "Iringan Gambang Kromong",
+            "Cina Benteng",
+          ],
+        },
+        gambang_kromong: {
+          tipe: "akulturasi",
+          label: "Kesenian · Tangerang",
+          judul: "Gambang Kromong",
+          sub: "Tangerang · Abad ke-18 · Kesenian",
+          lat: -6.1789,
+          lng: 106.6345,
+          isi: `<p>Gambang Kromong adalah kesenian musik tradisional yang lahir dari percampuran budaya <strong>Tionghoa dan masyarakat Betawi</strong> di wilayah Batavia dan Tangerang pada <strong>abad ke-18</strong>.</p>
+    <p>Nama diambil dari dua alat utama: <strong>Gambang</strong> (alat musik kayu dipukul) dan <strong>Kromong</strong> (seperangkat gong kecil perunggu).</p>
+    <p>Memadukan alat musik Tionghoa (<strong>Tehyan, Kongahyan, Sukong</strong>) + alat musik Betawi-Sunda (gong, kecrek, kendang) + <strong>lagu-lagu berbahasa Melayu Betawi</strong>.</p>`,
+          tags: [
+            "Tehyan & Kongahyan (Tionghoa)",
+            "Gong & Kendang (Betawi)",
+            "Lagu Melayu Betawi",
+            "Abad ke-18",
+          ],
+        },
+        kue_keranjang: {
+          tipe: "akulturasi",
+          label: "Kuliner · Tangerang",
+          judul: "Kue Keranjang (Nian Gao)",
+          sub: "Tangerang · Tradisi Imlek · Kuliner",
+          lat: -6.177,
+          lng: 106.638,
+          isi: `<p>Kue Keranjang atau <strong>Nian Gao (年糕)</strong> telah ada sejak masa <strong>Dinasti Han (~abad ke-2 SM)</strong> dan digunakan dalam upacara persembahan leluhur serta perayaan Imlek.</p>
+    <p>Kata <strong>"Nian Gao"</strong> bermakna <em>"semakin tinggi tahun ke tahun"</em> — simbol kemajuan, rezeki, dan keberuntungan. Dicetak dalam bentuk keranjang bulat.</p>
+    <p>Tradisi ini dibawa perantau Tionghoa ke Nusantara melalui jalur perdagangan maritim, termasuk ke Tangerang.</p>`,
+          tags: [
+            "Nian Gao (年糕)",
+            "Simbol Kemajuan & Keberuntungan",
+            "Dinasti Han",
+            "Tradisi Imlek",
+          ],
+        },
+        kue_bulan: {
+          tipe: "akulturasi",
+          label: "Kuliner · Tangerang",
+          judul: "Kue Bulan (Mooncake)",
+          sub: "Tangerang · Festival Pertengahan Musim Gugur",
+          lat: -6.1772,
+          lng: 106.6383,
+          isi: `<p>Kue Bulan atau <strong>Mooncake (月饼)</strong> berkembang kuat pada masa <strong>Dinasti Tang (abad ke-7)</strong> dan populer pada Dinasti Ming. Berkaitan dengan <strong>Festival Pertengahan Musim Gugur</strong> (Mid-Autumn Festival).</p>
+    <p>Dimakan bersama keluarga saat malam bulan purnama sebagai simbol <strong>kesatuan keluarga, kebersamaan, dan rasa syukur</strong>. Isian tradisional di Tiongkok berupa pasta biji teratai, namun <strong>di Tangerang disesuaikan dengan kacang hijau</strong>.</p>`,
+          tags: [
+            "Mooncake (月饼)",
+            "Festival Pertengahan Musim Gugur",
+            "Dinasti Tang",
+            "Adaptasi Isian Lokal",
+          ],
+        },
+        laksa: {
+          tipe: "akulturasi",
+          label: "Kuliner · Tangerang",
+          judul: "Laksa Tangerang",
+          sub: "Tangerang · Abad ke-19 · Kuliner",
+          lat: -6.1788,
+          lng: 106.6388,
+          isi: `<p>Laksa Tangerang adalah kuliner khas masyarakat <strong>Cina Benteng</strong> yang berkembang sejak abad ke-19. Lahir dari percampuran budaya <strong>Tionghoa peranakan dengan Betawi dan Sunda</strong>.</p>
+    <p>Berakar dari kuliner <strong>Tionghoa Selatan (Fujian)</strong>, kemudian diadaptasi dengan <strong>kuah santan dan daun kemangi</strong> yang menjadi ciri khas Betawi-Sunda. Berbeda dari laksa Bogor maupun Malaysia.</p>`,
+          tags: [
+            "Akar Kuliner Fujian",
+            "Kuah Santan + Daun Kemangi",
+            "Cina Benteng",
+            "Abad ke-19",
+          ],
+        },
+        asinan_lanjin: {
+          tipe: "akulturasi",
+          label: "Kuliner · Tangerang",
+          judul: "Asinan Lanjin",
+          sub: "Tangerang · Akhir Abad ke-19 · Kuliner",
+          lat: -6.1785,
+          lng: 106.639,
+          isi: `<p>Asinan Lanjin adalah kuliner khas masyarakat Cina Benteng yang berkembang dari tradisi <strong>asinan Tionghoa peranakan</strong>, berakulturasi dengan kuliner Betawi dan Sunda. Diperkirakan ada sejak <strong>akhir abad ke-19</strong>.</p>
+    <p>Ciri khas: rasa segar, asam, manis, dan pedas dengan kol, tauge, sawi, nanas, bengkoang, kedondong, ditambah kuah cabai, cuka, dan kacang goreng.</p>
+    <p>Mengadopsi tradisi <strong>fermentasi sayur dengan cuka dari Tionghoa</strong> + penambahan cabai sesuai selera Betawi-Sunda.</p>`,
+          tags: [
+            "Fermentasi Tionghoa + Cabai Betawi",
+            "Pasar Lama Tangerang",
+            "Akhir Abad ke-19",
+          ],
+        },
+        bakcang: {
+          tipe: "akulturasi",
+          label: "Kuliner · Tangerang",
+          judul: "Bakcang (Rouzong)",
+          sub: "Tangerang · Festival Peh Cun · Kuliner",
+          lat: -6.178,
+          lng: 106.6372,
+          isi: `<p>Bakcang <strong>(肉粽, rouzong)</strong> telah dikenal lebih dari <strong>2.000 tahun</strong> dan erat kaitannya dengan <strong>Festival Duan Wu / Peh Cun</strong>. Dibuat untuk mengenang penyair patriot <strong>Qu Yuan (340–278 SM)</strong>.</p>
+    <p>Dibawa ke Nusantara oleh perantau dari Fujian dan Guangdong. Di Tiongkok isian bakcang biasanya daging babi, namun di Nusantara <strong>isian diadaptasi</strong>: daging ayam, sapi, jamur, atau kacang-kacangan.</p>
+    <p>Mengandung nilai <strong>kebersamaan keluarga dan penghormatan leluhur</strong>. Bentuk segitiga dimaknai sebagai simbol keseimbangan dan keharmonisan.</p>`,
+          tags: [
+            "Qu Yuan (340–278 SM)",
+            "Isian Diadaptasi Lokal",
+            "Festival Peh Cun",
+            "2.000 Tahun",
+          ],
+        },
+        kue_ku: {
+          tipe: "akulturasi",
+          label: "Kuliner · Tangerang",
+          judul: "Kue Ku (Ang Ku Kueh)",
+          sub: "Tangerang · Kuliner Peranakan",
+          lat: -6.1775,
+          lng: 106.637,
+          isi: `<p>Kue Ku atau <strong>Ang Ku Kueh (紅龜粿)</strong> berasal dari wilayah <strong>Fujian dan Guangdong</strong> di Tiongkok Selatan. Dibawa ke Nusantara oleh perantau Tionghoa sejak masa perdagangan maritim.</p>
+    <p><strong>"Ang Ku Kueh"</strong> berarti <em>"kue kura-kura merah"</em>. Dalam budaya Tionghoa, <strong>kura-kura</strong> melambangkan panjang umur dan kemakmuran, sedangkan <strong>warna merah</strong> melambangkan kebahagiaan dan rezeki.</p>
+    <p>Banyak ditemukan pada perayaan keagamaan dan acara keluarga.</p>`,
+          tags: [
+            "Ang Ku Kueh (紅龜粿)",
+            "Kura-kura = Panjang Umur",
+            "Merah = Kebahagiaan",
+            "Fujian-Guangdong",
+          ],
+        },
+        pehcun: {
+          tipe: "akulturasi",
+          label: "Festival · Tangerang",
+          judul: "Festival Peh Cun Cisadane",
+          sub: "Tangerang · Sejak ~1910 · Festival",
+          lat: -6.0053,
+          lng: 106.5436,
+          isi: `<p>Festival Peh Cun di Sungai Cisadane termasuk <strong>salah satu yang tertua di Indonesia</strong>, telah dilaksanakan sejak sekitar <strong>tahun 1910</strong>. Diselenggarakan komunitas Tionghoa Benteng bersama Boen Tek Bio.</p>
+    <p>Awalnya dilakukan di sungai-sungai di Batavia (Jakarta), namun dipindah ke <strong>Sungai Cisadane</strong> yang lebih luas dan cocok untuk perlombaan perahu.</p>
+    <p>Rangkaian tradisi: <strong>lomba perahu naga</strong> (perahu dihias naga, didayung berkelompok), <strong>makan bakcang</strong>, tradisi lempar bebek, dan mendirikan telur.</p>`,
+          tags: [
+            "Tertua di Indonesia",
+            "Perahu Naga Cisadane",
+            "Sejak ~1910",
+            "Boen Tek Bio",
+          ],
+        },
+        ciotao: {
+          tipe: "akulturasi",
+          label: "Tradisi · Tangerang",
+          judul: "Upacara Cio Tao",
+          sub: "Tangerang · Tradisi Pernikahan",
+          lat: -6.1775,
+          lng: 106.638,
+          isi: `<p><strong>Cio Tao (梳头, Shū Tóu)</strong> bermakna <em>"menyisir rambut"</em>. Berasal dari Tiongkok Selatan — terutama Fujian (Hokkian) dan Guangdong (Kanton).</p>
+    <p>Upacara ini merupakan simbol peralihan dari masa remaja menuju kehidupan dewasa. Rambut calon pengantin disisir oleh orang tua sambil mengucapkan doa dan harapan baik.</p>
+    <p>Di Tangerang, <strong>pelaksanaannya telah mengalami penyesuaian dengan budaya lokal</strong> — contoh nyata adaptasi tradisi Tionghoa dalam konteks kehidupan masyarakat Indonesia.</p>`,
+          tags: [
+            "Cio Tao (梳头)",
+            "Menyisir Rambut Pra-Nikah",
+            "Fujian-Guangdong",
+            "Adaptasi Lokal Tangerang",
+          ],
+        },
+        bahasa_cb: {
+          tipe: "akulturasi",
+          label: "Bahasa · Tangerang",
+          judul: "Bahasa Cina Benteng",
+          sub: "Tangerang · Abad ke-17–19 · Bahasa",
+          lat: -6.178,
+          lng: 106.637,
+          isi: `<p>Bahasa Cina Benteng adalah hasil percampuran <strong>Hokkian + Melayu + Betawi + Sunda</strong>. Terbentuk sejak abad ke-17 ketika komunitas Tionghoa menetap dan berinteraksi intensif dengan masyarakat sekitar.</p>
+    <p>Contoh kosakata: dari Hokkian (<strong>cici, koko, amoy, apek</strong>), dari Betawi (<strong>gue, lu, kagak, emang</strong>), dan pengaruh Sunda terlihat dari kosakata seperti <strong>pugu</strong> dan logat bicara.</p>
+    <p>Bahasa Cina Benteng membuktikan bahwa <strong>akulturasi tidak hanya terjadi dalam makanan atau kesenian, tetapi juga dalam bahasa sehari-hari</strong>.</p>`,
+          tags: [
+            "Hokkian + Melayu + Betawi + Sunda",
+            "cici, koko (Hokkian)",
+            "gue, lu (Betawi)",
+            "Abad ke-17–19",
+          ],
+        },
+      };
+
+      // ── PETA LEAFLET ──
+      let petaSudahInit = false;
+
+      function initPetaAkulturasi() {
+        if (petaSudahInit) return;
+        petaSudahInit = true;
+
+        const map = L.map("peta-interaktif", {
+          center: [5, 105],
+          zoom: 4,
+          zoomControl: true,
+          scrollWheelZoom: true,
+        });
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "© OpenStreetMap contributors",
+          maxZoom: 18,
+        }).addTo(map);
+
+        // ── Garis jalur ──
+        const opsiSutra = {
+          color: "#8B1A1A",
+          weight: 3,
+          dashArray: "10,6",
+          opacity: 0.85,
+        };
+        const opsiRempah = {
+          color: "#B8860B",
+          weight: 3,
+          dashArray: "10,6",
+          opacity: 0.85,
+        };
+
+        const layerJalurSutra = L.layerGroup([
+          L.polyline(
+            [
+              [34.27, 108.93],
+              [39.65, 66.96],
+              [33.34, 44.4],
+              [41.01, 28.97],
+            ],
+            opsiSutra,
+          ),
+          L.polyline(
+            [
+              [24.9, 118.6],
+              [16.0, 108.2],
+              [2.2, 102.2],
+              [-6.9, 112.05],
+              [-6.7, 111.45],
+              [-6.99, 110.42],
+            ],
+            opsiSutra,
+          ),
+          L.polyline(
+            [
+              [24.9, 118.6],
+              [11.25, 75.78],
+              [27.1, 56.46],
+              [33.34, 44.4],
+            ],
+            opsiSutra,
+          ),
+          L.polyline(
+            [
+              [2.2, 102.2],
+              [-6.18, 106.63],
+            ],
+            opsiSutra,
+          ),
+        ]).addTo(map);
+
+        const layerJalurRempah = L.layerGroup([
+          L.polyline(
+            [
+              [0.79, 127.37],
+              [-5.14, 119.43],
+              [2.2, 102.2],
+            ],
+            opsiRempah,
+          ),
+          L.polyline(
+            [
+              [-4.52, 129.89],
+              [-5.14, 119.43],
+            ],
+            opsiRempah,
+          ),
+          L.polyline(
+            [
+              [2.2, 102.2],
+              [21.17, 72.83],
+              [12.78, 45.03],
+              [38.72, -9.14],
+            ],
+            opsiRempah,
+          ),
+          L.polyline(
+            [
+              [2.2, 102.2],
+              [-6.04, 106.15],
+              [-6.18, 106.63],
+            ],
+            opsiRempah,
+          ),
+          L.polyline(
+            [
+              [-5.14, 119.43],
+              [-6.9, 112.05],
+              [-6.99, 110.42],
+              [-6.7, 111.45],
+            ],
+            opsiRempah,
+          ),
+        ]).addTo(map);
+
+        // ── Helper ikon ──
+        function ikonTipe(tipe, emoji, ukuran) {
+          const uk = ukuran || 32;
+          const shapes = {
+            kedatangan: `border-radius:50% 50% 50% 0;transform:rotate(-45deg);`,
+            klenteng: `border-radius:4px;`,
+            akulturasi: `border-radius:50% 0 50% 50%;transform:rotate(45deg);`,
+          };
+          const colors = {
+            kedatangan: "#1A3A8B",
+            klenteng: "#8B1A1A",
+            akulturasi: "#7A5C1A",
+          };
+          const inner = {
+            kedatangan: `transform:rotate(45deg)`,
+            klenteng: ``,
+            akulturasi: `transform:rotate(-45deg)`,
+          };
+          return L.divIcon({
+            html: `<div style="width:${uk}px;height:${uk}px;background:${colors[tipe]};border:3px solid #fff;${shapes[tipe]}box-shadow:0 3px 10px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;"><span style="${inner[tipe]};font-size:${uk >= 36 ? "1rem" : "0.82rem"}">${emoji}</span></div>`,
+            iconSize: [uk, uk],
+            iconAnchor: [uk / 2, uk / 2],
+            popupAnchor: [0, -(uk / 2 + 6)],
+            className: "",
+          });
+        }
+
+        // ── Layer kedatangan ──
+        const layerKedatangan = L.layerGroup();
+        const kedataObj = {
+          semarang_ked: "🏮",
+          lasem_ked: "🏮",
+          tangerang_ked: "🏮",
+        };
+        Object.keys(kedataObj).forEach((id) => {
+          const d = semuaData[id];
+          L.marker([d.lat, d.lng], {
+            icon: ikonTipe("kedatangan", kedataObj[id], 38),
+          })
+            .bindPopup(buatPopupRingkas(d), { maxWidth: 240 })
+            .on("click", () => tampilSidebar(id))
+            .addTo(layerKedatangan);
+        });
+        layerKedatangan.addTo(map);
+
+        // Titik jalur transit/asal (tidak buka sidebar, popup saja)
+        const titikJalur = [
+          {
+            lat: 34.27,
+            lng: 108.93,
+            e: "🏯",
+            nama: "Xi'an, China",
+            abad: "Abad ke-2 SM",
+            desc: "Ibu kota Dinasti Han dan Tang. Titik awal Jalur Sutra darat.",
+          },
+          {
+            lat: 24.9,
+            lng: 118.6,
+            e: "🏯",
+            nama: "Quanzhou, China",
+            abad: "Abad ke-7–15",
+            desc: "Pelabuhan terbesar Jalur Sutra maritim. Titik keberangkatan utama ke Nusantara.",
+          },
+          {
+            lat: 23.1,
+            lng: 113.3,
+            e: "🏯",
+            nama: "Guangzhou, China",
+            abad: "Abad ke-2 SM+",
+            desc: "Kota pelabuhan tertua China Selatan. Banyak perantau Tionghoa berasal dari sini.",
+          },
+          {
+            lat: 0.79,
+            lng: 127.37,
+            e: "🌿",
+            nama: "Ternate, Maluku",
+            abad: "Abad ke-7–17",
+            desc: "Pusat cengkeh terbesar dunia. Menarik pedagang dari seluruh dunia.",
+          },
+          {
+            lat: -4.52,
+            lng: 129.89,
+            e: "🌿",
+            nama: "Banda, Maluku",
+            abad: "Abad ke-7–17",
+            desc: "Satu-satunya penghasil pala dan fuli di dunia.",
+          },
+          {
+            lat: 39.65,
+            lng: 66.96,
+            e: "🕌",
+            nama: "Samarkand, Uzbekistan",
+            abad: "Abad ke-2 SM–15",
+            desc: "Kota oasis terpenting Asia Tengah. Persimpangan jalur darat.",
+          },
+          {
+            lat: 41.01,
+            lng: 28.97,
+            e: "⛪",
+            nama: "Konstantinopel",
+            abad: "Abad ke-4–15",
+            desc: "Gerbang Eropa. Titik akhir jalur darat Jalur Sutra.",
+          },
+          {
+            lat: 16.0,
+            lng: 108.2,
+            e: "⚓",
+            nama: "Hội An, Vietnam",
+            abad: "Abad ke-2–17",
+            desc: "Kota transit UNESCO. Jalur laut antara China dan Nusantara.",
+          },
+          {
+            lat: 2.2,
+            lng: 102.2,
+            e: "⚓",
+            nama: "Malaka, Malaysia",
+            abad: "Abad ke-15–16",
+            desc: "Pusat rempah terpenting Asia Tenggara. Cheng Ho singgah beberapa kali.",
+          },
+          {
+            lat: -5.14,
+            lng: 119.43,
+            e: "⚓",
+            nama: "Makassar (Gowa)",
+            abad: "Abad ke-14–17",
+            desc: "Pelabuhan bebas terbesar Asia Tenggara abad ke-17.",
+          },
+          {
+            lat: -6.04,
+            lng: 106.15,
+            e: "⚓",
+            nama: "Banten",
+            abad: "Abad ke-16–17",
+            desc: "Pelabuhan rempah terbesar Jawa Barat. Pintu masuk ke Tangerang.",
+          },
+          {
+            lat: -6.9,
+            lng: 112.05,
+            e: "⚓",
+            nama: "Tuban",
+            abad: "Abad ke-14–15",
+            desc: "Pelabuhan Majapahit. Transit menuju Semarang dan Lasem.",
+          },
+        ];
+        titikJalur.forEach((t) => {
+          const uk = 28;
+          L.marker([t.lat, t.lng], {
+            icon: L.divIcon({
+              html: `<div style="width:${uk}px;height:${uk}px;background:#7A5C1A;border:2.5px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 8px rgba(0,0,0,0.3);display:flex;align-items:center;justify-content:center;"><span style="transform:rotate(45deg);font-size:0.8rem;">${t.e}</span></div>`,
+              iconSize: [uk, uk],
+              iconAnchor: [uk / 2, uk],
+              popupAnchor: [0, -uk],
+              className: "",
+            }),
+          })
+            .bindPopup(
+              `<div class="popup-tionghoa"><div class="pop-header"><h4>${t.e} ${t.nama}</h4><span>⏳ ${t.abad}</span></div><div class="pop-body"><p>${t.desc}</p></div></div>`,
+              { maxWidth: 220 },
+            )
+            .addTo(layerKedatangan);
+        });
+
+        // ── Layer klenteng ──
+        const layerKlenteng = L.layerGroup();
+        const klentengIds = [
+          "sampookong",
+          "taykaksie",
+          "siuhokbio",
+          "wiehwiekiong",
+          "cuankiong",
+          "gieyongbio",
+          "poanbio",
+          "boentekbio",
+          "boensanbio",
+          "boenhaybio",
+          "tjosoekong",
+        ];
+        const klentengEmoji = {
+          sampookong: "🏛️",
+          taykaksie: "🏛️",
+          siuhokbio: "🏛️",
+          wiehwiekiong: "🏛️",
+          cuankiong: "🏛️",
+          gieyongbio: "🏛️",
+          poanbio: "🏛️",
+          boentekbio: "🏛️",
+          boensanbio: "🏛️",
+          boenhaybio: "🏛️",
+          tjosoekong: "🏛️",
+        };
+        klentengIds.forEach((id) => {
+          const d = semuaData[id];
+          L.marker([d.lat, d.lng], {
+            icon: ikonTipe("klenteng", klentengEmoji[id], 34),
+          })
+            .bindPopup(buatPopupRingkas(d), { maxWidth: 240 })
+            .on("click", () => tampilSidebar(id))
+            .addTo(layerKlenteng);
+        });
+
+        // ── Layer akulturasi ──
+        const layerAkulturasi = L.layerGroup();
+        const akulturasiEmoji = {
+          lumpia: "🥟",
+          dugderan: "🎊",
+          mochi: "🍡",
+          gambang_smg: "🎵",
+          chengho_festival: "⛵",
+          batik_lasem: "🎨",
+          cengbeng: "🕯️",
+          lontong_tuyuhan: "🍛",
+          yopia: "🥮",
+          kopi_lelet: "☕",
+          rumah_merah: "🏠",
+          masjid_lasem: "🕌",
+          cokek: "💃",
+          gambang_kromong: "🥁",
+          kue_keranjang: "🎂",
+          kue_bulan: "🌕",
+          laksa: "🍲",
+          asinan_lanjin: "🥗",
+          bakcang: "🍱",
+          kue_ku: "🔴",
+          pehcun: "🐉",
+          ciotao: "💍",
+          bahasa_cb: "🗣️",
+        };
+        Object.keys(akulturasiEmoji).forEach((id) => {
+          const d = semuaData[id];
+          if (!d) return;
+          L.marker([d.lat, d.lng], {
+            icon: ikonTipe("akulturasi", akulturasiEmoji[id], 32),
+          })
+            .bindPopup(buatPopupRingkas(d), { maxWidth: 240 })
+            .on("click", () => tampilSidebar(id))
+            .addTo(layerAkulturasi);
+        });
+
+        // ── State layer ──
+        const layers = {
+          jalursutra: layerJalurSutra,
+          jalurrempah: layerJalurRempah,
+          kedatangan: layerKedatangan,
+          klenteng: layerKlenteng,
+          akulturasi: layerAkulturasi,
+        };
+        const active = {
+          jalursutra: true,
+          jalurrempah: true,
+          kedatangan: true,
+          klenteng: false,
+          akulturasi: false,
+        };
+
+        window.toggleLayer = function (id, btn) {
+          if (active[id]) {
+            layers[id].removeFrom(map);
+            active[id] = false;
+            btn.classList.remove("aktif");
+          } else {
+            layers[id].addTo(map);
+            active[id] = true;
+            btn.classList.add("aktif");
+          }
+        };
+
+        // Legenda
+        const leg = L.control({ position: "bottomright" });
+        leg.onAdd = function () {
+          const d = L.DomUtil.create("div");
+          d.style.cssText =
+            "background:rgba(255,253,247,0.96);padding:8px 12px;border-radius:8px;font-size:10px;font-family:serif;border:1px solid #D4C09A;box-shadow:0 2px 8px rgba(0,0,0,0.15);line-height:1.9;";
+          d.innerHTML = `<b style="color:#5C0E0E;">Legenda</b>
+      <div><span style="display:inline-block;width:18px;height:0;border-top:2px dashed #8B1A1A;vertical-align:middle;margin-right:4px;"></span>Jalur Sutra</div>
+      <div><span style="display:inline-block;width:18px;height:0;border-top:2px dashed #B8860B;vertical-align:middle;margin-right:4px;"></span>Jalur Rempah</div>
+      <div><span style="color:#1A3A8B;font-size:12px;">◆</span> Kedatangan</div>
+      <div><span style="color:#8B1A1A;font-size:12px;">■</span> Klenteng</div>
+      <div><span style="color:#7A5C1A;font-size:12px;">◆</span> Akulturasi</div>`;
+          return d;
+        };
+        leg.addTo(map);
+      }
+
+      // ── Buat popup ringkas ──
+      function buatPopupRingkas(d) {
+        return `<div class="popup-tionghoa">
+    <div class="pop-header"><h4>${d.judul}</h4><span>${d.label}</span></div>
+    <div class="pop-body"><p>${d.sub}</p><button class="pop-detail-btn" onclick="tampilSidebar('${Object.keys(semuaData).find((k) => semuaData[k] === d)}')">📖 Baca selengkapnya</button></div>
+  </div>`;
+      }
+
+      // ── Tampil sidebar detail ──
+      function tampilSidebar(id) {
+        const d = semuaData[id];
+        if (!d) return;
+
+        const warnaBadge = {
+          kedatangan: "kedatangan",
+          klenteng: "klenteng",
+          akulturasi: "akulturasi",
+        };
+        const labelBadge = {
+          kedatangan: "Kedatangan",
+          klenteng: "Klenteng",
+          akulturasi: "Hasil Akulturasi",
+        };
+        const tagsHTML = d.tags
+          .map((t) => `<span class="detail-tag">${t}</span>`)
+          .join("");
+
+        document.getElementById("sidebar-detail-isi").innerHTML = `
+    <span class="detail-badge ${warnaBadge[d.tipe]}">${labelBadge[d.tipe]}</span>
+    <h3 class="detail-judul">${d.judul}</h3>
+    <p class="detail-sub">${d.sub}</p>
+    <div class="detail-isi">${d.isi}</div>
+    <div class="detail-tags">${tagsHTML}</div>`;
+
+        document.getElementById("sidebar-intro").style.display = "none";
+        document.getElementById("sidebar-detail").style.display = "block";
+
+        // Scroll sidebar ke atas
+        document.getElementById("peta-sidebar").scrollTop = 0;
+      }
+
+      // Dipanggil dari kartu klenteng/hasil di bawah
+      window.bukaSidebarDariKartu = function (id) {
+        tampilSidebar(id);
+        document
+          .getElementById("peta-sidebar")
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      };
+
+      function tutupDetail() {
+        document.getElementById("sidebar-intro").style.display = "block";
+        document.getElementById("sidebar-detail").style.display = "none";
+      }
+
+      // ── FUNGSI TAB BAWAH ──
+      function gantiAkul(id, el) {
+        document
+          .querySelectorAll(".akul-tab")
+          .forEach((t) => t.classList.remove("aktif"));
+        document
+          .querySelectorAll(".akul-konten")
+          .forEach((c) => c.classList.remove("aktif"));
+        el.classList.add("aktif");
+        document.getElementById("konten-" + id).classList.add("aktif");
+      }
+
+      function gantiKlenteng(id, el) {
+        document
+          .querySelectorAll(".hasil-kota-tab")
+          .forEach((t) => t.classList.remove("aktif"));
+        document
+          .querySelectorAll(".klenteng-konten")
+          .forEach((c) => c.classList.remove("aktif"));
+        el.classList.add("aktif");
+        document.getElementById("klenteng-" + id).classList.add("aktif");
+      }
+
+      function gantiHasil(id, el) {
+        document
+          .querySelectorAll(".hasil-kota-tab")
+          .forEach((t) => t.classList.remove("aktif"));
+        document
+          .querySelectorAll(".hasil-konten")
+          .forEach((c) => c.classList.remove("aktif"));
+        el.classList.add("aktif");
+        document.getElementById("hasil-" + id).classList.add("aktif");
+      }
+
+      // ── INIT ──
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(initPetaAkulturasi, 200);
+      });
+    </script>
+  </body>
+</html>
