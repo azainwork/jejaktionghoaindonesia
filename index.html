@@ -3440,46 +3440,90 @@
         const layerJalurRempah = L.layerGroup([
           L.polyline(
             [
-              [0.79, 127.37],
-              [-5.14, 119.43],
-              [2.2, 102.2],
+              [0.79, 127.37],    // Ternate
+              [-5.14, 119.43],   // Makassar
+              [2.2, 102.2],      // Malaka
             ],
             opsiRempah,
           ),
           L.polyline(
             [
-              [-4.52, 129.89],
-              [-5.14, 119.43],
+              [-4.52, 129.89],   // Banda
+              [-5.14, 119.43],   // Makassar
             ],
             opsiRempah,
           ),
           L.polyline(
             [
-              [2.2, 102.2],
-              [21.17, 72.83],
-              [12.78, 45.03],
-              [38.72, -9.14],
+              [2.2, 102.2],      // Malaka
+              [11.13, 75.34],    // Calicut, India
+              [-33.93, 18.42],   // Tanjung Harapan
+              [38.72, -9.14],    // Lisboa
             ],
             opsiRempah,
           ),
           L.polyline(
             [
-              [2.2, 102.2],
-              [-6.04, 106.15],
-              [-6.18, 106.63],
+              [2.2, 102.2],      // Malaka
+              [-6.04, 106.15],   // Sunda Kelapa
+              [-6.18, 106.63],   // Batavia/Jakarta
             ],
             opsiRempah,
           ),
           L.polyline(
             [
-              [-5.14, 119.43],
-              [-6.9, 112.05],
-              [-6.99, 110.42],
-              [-6.7, 111.45],
+              [-5.14, 119.43],   // Makassar
+              [-6.9, 112.05],    // Jawa Timur
+              [-6.99, 110.42],   // Jawa Tengah
+              [-6.7, 111.45],    // Jawa Tengah
             ],
             opsiRempah,
           ),
         ]).addTo(map);
+
+        // const layerJalurRempah = L.layerGroup([
+        //   L.polyline(
+        //     [
+        //       [0.79, 127.37],
+        //       [-5.14, 119.43],
+        //       [2.2, 102.2],
+        //     ],
+        //     opsiRempah,
+        //   ),
+        //   L.polyline(
+        //     [
+        //       [-4.52, 129.89],
+        //       [-5.14, 119.43],
+        //     ],
+        //     opsiRempah,
+        //   ),
+        //   L.polyline(
+        //     [
+        //       [2.2, 102.2],
+        //       [21.17, 72.83],
+        //       [12.78, 45.03],
+        //       [38.72, -9.14],
+        //     ],
+        //     opsiRempah,
+        //   ),
+        //   L.polyline(
+        //     [
+        //       [2.2, 102.2],
+        //       [-6.04, 106.15],
+        //       [-6.18, 106.63],
+        //     ],
+        //     opsiRempah,
+        //   ),
+        //   L.polyline(
+        //     [
+        //       [-5.14, 119.43],
+        //       [-6.9, 112.05],
+        //       [-6.99, 110.42],
+        //       [-6.7, 111.45],
+        //     ],
+        //     opsiRempah,
+        //   ),
+        // ]).addTo(map);
 
         // ── Helper ikon ──
         function ikonTipe(tipe, emoji, ukuran) {
